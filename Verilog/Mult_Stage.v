@@ -1,4 +1,8 @@
-//UNTESTED
+//TESTED
+/* 
+Problem: 7_230: 222*524285 = 67,108,198 should be 116,391,270
+Problem: 7_240: 198*524287 = 
+*/
 module Mult_Stage(
     input clk,
     input GlobalReset,
