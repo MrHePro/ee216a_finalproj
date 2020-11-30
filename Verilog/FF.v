@@ -1,3 +1,4 @@
+//TESTED
 module FF(clk, GlobalReset,D,Q);
 
 parameter IN_SIZE = 10;
