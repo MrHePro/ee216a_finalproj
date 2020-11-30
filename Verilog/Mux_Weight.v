@@ -1,5 +1,5 @@
 //UNTESTED
-module Mux_Pixel(In, Select, Out);
+module Mux_Weight(In, Select, Out);
 
 parameter OUT_SIZE = 532;
 parameter SEL_SIZE = 28;
