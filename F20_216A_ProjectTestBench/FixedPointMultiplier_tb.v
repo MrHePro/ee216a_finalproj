@@ -20,11 +20,13 @@ initial begin
     rst = 1'b0;
 
     @(negedge clk);
-    in1 = 19'd0;
-    in2 = 10'd0;
+    in1 = 19'b1111111111111111101;
+    in2 = 10'b0011011110;
+    repeat(10) @(negedge clk);
     @(negedge clk);
-    in1 = 19'd10;
-    in2 = 10'd5;
+    in1 = 19'b1111111111111111111;
+    in2 = 10'b0011000110;
+    repeat(10) @(negedge clk);
     @(negedge clk);
     in1 = 19'd50;
     in2 = 10'd8;
