@@ -1,4 +1,4 @@
-//UNTESTED
+//TESTED
 module Mux_Weight(In, Select, Out);
 
 parameter OUT_SIZE = 532;
@@ -11,8 +11,8 @@ output  reg [OUT_SIZE-1:0]              Out;
 
 always@(Select) begin
     case(Select)
-        default:    Out = In[OUT_SIZE*1-1:OUT_SIZE*0];
-        5'd1:       Out = In[OUT_SIZE*2-1:OUT_SIZE*1];
+        default:    Out = In[OUT_SIZE*1-1:OUT_SIZE*0];//[521:0]
+        5'd1:       Out = In[OUT_SIZE*2-1:OUT_SIZE*1];//[1063:532]
         5'd2:       Out = In[OUT_SIZE*3-1:OUT_SIZE*2];
         5'd3:       Out = In[OUT_SIZE*4-1:OUT_SIZE*3];
         5'd4:       Out = In[OUT_SIZE*5-1:OUT_SIZE*4];

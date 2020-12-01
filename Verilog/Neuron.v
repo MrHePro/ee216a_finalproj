@@ -16,13 +16,16 @@ module Neuron(
 
 
     //Select Beta for this Neuron
-    assign BetaX = WX[14914:14896];
+    //assign BetaX = WX[14914:14896];
+    assign BetaX = WX[18:0];
 
     //Mux to select WeightX
-    Mux_Weight WeightX_MUX(WX[14895:0], WeightX_Select, WeightX);
+    //Mux_Weight WeightX_MUX(WX[14895:0], WeightX_Select, WeightX);
+    Mux_Weight WeightX_MUX(WX[14914:19], WeightX_Select, WeightX);
 
     //Mux to select Pixel
-    Mux_Pixel Pixel_MUX(PIXEL[7839:0], PixelX_Select, PixelX);
+    //Mux_Pixel Pixel_MUX(PIXEL[7839:0], PixelX_Select, PixelX);
+    Mux_Pixel Pixel_MUX(PIXEL[7849:10], PixelX_Select, PixelX);
 
     //Mult Stage
     wire    [26*28-1:0] Result_28;
@@ -38,7 +41,7 @@ module Neuron(
 
     //Adder 5 stage
     wire    [25:0]      Result_Final;
-    Adder_5Stage add_29_1(clk, GlobalReset, NX_28, {9'd0,BetaX}, Result_Final);
+    Adder_5Stage add_29_1(clk, GlobalReset, NX_28, {{9{BetaX[18]}},BetaX}, Result_Final);
 
     //Final Flop for pipeline
     FF_EN #(26) reg_ff_28(clk, GlobalReset, Result_Final, Out_X, ENX);

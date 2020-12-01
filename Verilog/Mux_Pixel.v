@@ -1,4 +1,4 @@
-//UNTESTED
+//TESTED
 module Mux_Pixel(In, Select, Out);
 
 parameter OUT_SIZE = 280;
