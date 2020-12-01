@@ -1,3 +1,4 @@
+//CONNECTION TESTED
 module Image_Classifier ( 
  input clk, 
  input GlobalReset, 

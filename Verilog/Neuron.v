@@ -1,3 +1,4 @@
+//TESTED
 module Neuron(
  input clk, 
  input GlobalReset,

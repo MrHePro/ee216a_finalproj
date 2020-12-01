@@ -1,3 +1,4 @@
+//TESTED
 module Adder_5Stage(
     input clk,
     input GlobalReset,

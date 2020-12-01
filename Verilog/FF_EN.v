@@ -1,4 +1,4 @@
-//UNTESTED
+//TESTED
 module FF_EN(clk, GlobalReset, D, Q, EN);
 
 parameter IN_SIZE = 10;
@@ -12,4 +12,4 @@ always@(posedge clk) begin
     else            Q <= Q;
 end
 
-endmodule;
+endmodule

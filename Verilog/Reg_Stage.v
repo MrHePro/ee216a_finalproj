@@ -1,4 +1,4 @@
-//UNTESTED
+//TESTED
 module Reg_Stage(
     input clk,
     input GlobalReset,

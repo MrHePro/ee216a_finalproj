@@ -42,4 +42,4 @@ always@(Select) begin
     endcase
 end
 
-endmodule;
+endmodule
