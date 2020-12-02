@@ -32,6 +32,7 @@ input  [25:0] Out_9;
 
 output [3:0] Out;
 
+	
 //reg & wire declarations
 reg  [25:0] out_0_r;
 reg  [25:0] out_1_r;
