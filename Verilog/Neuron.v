@@ -42,7 +42,7 @@ module Neuron(
 
     //Adder 5 stage
     wire    [25:0]      Result_Final;
-    Adder_5Stage add_29_1(clk, GlobalReset, NX_28, {{9{BetaX[18]}},BetaX}, Result_Final);
+    Adder_5Stage add_29_1(clk, GlobalReset, NX_28, {{7{BetaX[18]}},BetaX}, Result_Final);
 
     //Final Flop for pipeline
     FF_EN #(26) reg_ff_28(clk, GlobalReset, Result_Final, Out_X, ENX);

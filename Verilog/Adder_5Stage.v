@@ -14,8 +14,12 @@ module Adder_5Stage(
     FF #(26*14) FF_Port1_14(clk, GlobalReset, Result_28[26*14-1:0],     Result_28_FF1);
     FF #(26*14) FF_Port2_14(clk, GlobalReset, Result_28[26*28-1:26*14], Result_28_FF2);
 
-    wire    [26-1:0] Beta_28_FF;
-    FF #(26) FF_Beta_14(clk, GlobalReset, Beta, Beta_28_FF);
+    //Flop Beta 3 times to consistant with pipeline
+    wire    [26-1:0] Beta_28_FF, Beta_28_FF1, Beta_28_FF2;
+    //FF #(26) FF_Beta_14(clk, GlobalReset, Beta, Beta_28_FF);
+    FF #(26) FF_Beta_14_0(clk, GlobalReset, Beta, Beta_28_FF1);
+    FF #(26) FF_Beta_14_1(clk, GlobalReset, Beta_28_FF1, Beta_28_FF2);
+    FF #(26) FF_Beta_14_2(clk, GlobalReset, Beta_28_FF2, Beta_28_FF);
 
     //14 adder
     genvar k;
@@ -32,8 +36,12 @@ module Adder_5Stage(
     FF #(26*7) FF_Port1_7(clk, GlobalReset, Result_14[26*7-1:0],     Result_14_FF1);
     FF #(26*7) FF_Port2_7(clk, GlobalReset, Result_14[26*14-1:26*7], Result_14_FF2);
 
-    wire    [26-1:0] Beta_14_FF;
-    FF #(26) FF_Beta_7(clk, GlobalReset, Beta_28_FF, Beta_14_FF);
+    //Flop Beta 3 times to consistant with pipeline
+    wire    [26-1:0] Beta_14_FF, Beta_14_FF1, Beta_14_FF2;
+    //FF #(26) FF_Beta_7(clk, GlobalReset, Beta_28_FF, Beta_14_FF);
+    FF #(26) FF_Beta_7_0(clk, GlobalReset, Beta_28_FF, Beta_14_FF1);
+    FF #(26) FF_Beta_7_1(clk, GlobalReset, Beta_14_FF1, Beta_14_FF2);
+    FF #(26) FF_Beta_7_2(clk, GlobalReset, Beta_14_FF2, Beta_14_FF);
 
     //7 adder
     generate for (k = 0; k <= 6; k = k + 1) begin
