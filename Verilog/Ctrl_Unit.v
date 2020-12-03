@@ -1,3 +1,4 @@
+//TESTED
 module Ctrl_Unit(
     input clk,
     input GlobalReset,

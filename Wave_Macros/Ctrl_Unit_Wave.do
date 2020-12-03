@@ -30,7 +30,7 @@ add wave -noupdate /Ctrl_Unit_tb/CTRL/W_INC
 add wave -noupdate /Ctrl_Unit_tb/CTRL/P_INC
 add wave -noupdate /Ctrl_Unit_tb/CTRL/E_SHFT
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {86400 ps} 0}
+WaveRestoreCursors {{Cursor 1} {546030 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 235
 configure wave -valuecolwidth 83

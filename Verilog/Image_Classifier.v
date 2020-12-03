@@ -1,4 +1,4 @@
-//CONNECTION TESTED
+//TESTED
 module Image_Classifier ( 
  input clk, 
  input GlobalReset, 
@@ -8670,10 +8670,13 @@ assign W9 = {Wgt_9_0, Wgt_9_1, Wgt_9_2, Wgt_9_3, Wgt_9_4, Wgt_9_5, Wgt_9_6, Wgt_
 
 
 
-//10 Neurons
+//Ctrl Unit
 wire            ENX;        //Enable signal for last FF             Latency: 22+27 + 15 cycles
 wire    [27:0]  ENX_Int;    //Enable signal for intermediate FF     Latency: 22 cycles
 wire    [4:0]   WeightX_Select, PixelX_Select;     
+Ctrl_Unit CTRL(clk, ~GlobalReset, Input_Valid, WeightX_Select, PixelX_Select, ENX_Int, ENX, Output_Valid);
+
+//10 Neurons
 wire    [25:0]  Out_0 ,Out_1, Out_2, Out_3, Out_4, Out_5, Out_6, Out_7, Out_8, Out_9;
 Neuron N0(clk, ~GlobalReset, W0, PIXEL, WeightX_Select, PixelX_Select, ENX_Int, ENX, Out_0);
 Neuron N1(clk, ~GlobalReset, W1, PIXEL, WeightX_Select, PixelX_Select, ENX_Int, ENX, Out_1);
@@ -8686,11 +8689,8 @@ Neuron N7(clk, ~GlobalReset, W7, PIXEL, WeightX_Select, PixelX_Select, ENX_Int, 
 Neuron N8(clk, ~GlobalReset, W8, PIXEL, WeightX_Select, PixelX_Select, ENX_Int, ENX, Out_8);
 Neuron N9(clk, ~GlobalReset, W9, PIXEL, WeightX_Select, PixelX_Select, ENX_Int, ENX, Out_9);
 
-//Ctrl Unit
-Ctrl_Unit CTRL(clk, ~GlobalReset, Input_Valid, WeightX_Select, PixelX_Select, ENX_Int, ENX, Output_Valid);
-
 //Max Selector
-Max_Selector Max_Sel(clk, ~GlobalReset, Out_0, Out_1, Out_2, Out_3, Out_4, Out_5, Out_6, Out_7, Out_8, Out_9, Out);
+Max_Selector Max_Sel(clk, Out_0, Out_1, Out_2, Out_3, Out_4, Out_5, Out_6, Out_7, Out_8, Out_9, Image_Number);
 
 
 
