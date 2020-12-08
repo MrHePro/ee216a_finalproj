@@ -1,0 +1,131 @@
+(DELAYFILE
+(SDFVERSION "OVI 1.0")
+(DESIGN "Image_Classifier")
+(DATE "Tue Dec  8 00:12:57 2020")
+(VENDOR "saed32rvt_ff1p16vn40c")
+(PROGRAM "Synopsys Design Compiler cmos")
+(VERSION "G-2012.06-SP1")
+(DIVIDER /)
+(VOLTAGE 1.16:0.95:0.95)
+(PROCESS)
+(TEMPERATURE -40.00:125.00:125.00)
+(TIMESCALE 1ns)
+(CELL
+  (CELLTYPE "Image_Classifier")
+  (INSTANCE)
+  (DELAY
+    (ABSOLUTE
+    (INTERCONNECT GlobalReset I_10/A (3.226:0.000:0.000))
+    (INTERCONNECT GlobalReset I_9/A (3.226:0.000:0.000))
+    (INTERCONNECT GlobalReset I_8/A (3.226:0.000:0.000))
+    (INTERCONNECT GlobalReset I_7/A (3.226:0.000:0.000))
+    (INTERCONNECT GlobalReset I_6/A (3.226:0.000:0.000))
+    (INTERCONNECT GlobalReset I_5/A (3.226:0.000:0.000))
+    (INTERCONNECT GlobalReset I_4/A (3.226:0.000:0.000))
+    (INTERCONNECT GlobalReset I_3/A (3.226:0.000:0.000))
+    (INTERCONNECT GlobalReset I_2/A (3.226:0.000:0.000))
+    (INTERCONNECT GlobalReset I_1/A (3.226:0.000:0.000))
+    (INTERCONNECT GlobalReset I_0/A (3.226:0.000:0.000))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1_RVT")
+  (INSTANCE I_10)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.004:0.004:0.004) (0.005:0.005:0.005))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1_RVT")
+  (INSTANCE I_9)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.004:0.004:0.004) (0.005:0.005:0.005))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1_RVT")
+  (INSTANCE I_8)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.004:0.004:0.004) (0.005:0.005:0.005))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1_RVT")
+  (INSTANCE I_7)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.004:0.004:0.004) (0.005:0.005:0.005))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1_RVT")
+  (INSTANCE I_6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.004:0.004:0.004) (0.005:0.005:0.005))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1_RVT")
+  (INSTANCE I_5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.004:0.004:0.004) (0.005:0.005:0.005))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1_RVT")
+  (INSTANCE I_4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.004:0.004:0.004) (0.005:0.005:0.005))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1_RVT")
+  (INSTANCE I_3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.004:0.004:0.004) (0.005:0.005:0.005))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1_RVT")
+  (INSTANCE I_2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.004:0.004:0.004) (0.005:0.005:0.005))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1_RVT")
+  (INSTANCE I_1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.004:0.004:0.004) (0.005:0.005:0.005))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1_RVT")
+  (INSTANCE I_0)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.004:0.004:0.004) (0.005:0.005:0.005))
+    )
+  )
+)
+)

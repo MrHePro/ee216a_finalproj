@@ -1,0 +1,45 @@
+Warning: Design 'Image_Classifier' has '3' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : Image_Classifier
+Version: G-2012.06-SP1
+Date   : Tue Dec  8 00:12:50 2020
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_ff1p16vn40c (File: /w/apps2/public.2/tech/synopsys/32-28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ff1p16vn40c.db)
+
+Number of ports:                       157008
+Number of nets:                        157318
+Number of cells:                           23
+Number of combinational cells:             23
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                         11
+Number of references:                       4
+
+Combinational area:         13.977920
+Buf/Inv area:               13.977920
+Noncombinational area:       0.000000
+Net Interconnect area:    22473.428510 
+
+Total cell area:            13.977920
+Total area:               22487.406430
+
+Information: This design contains black box (unknown) components. (RPT-8)
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Image_Classifier                    13.9779    100.0   13.9779     0.0000  0.0000  Image_Classifier
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                  13.9779     0.0000  0.0000
+
+1

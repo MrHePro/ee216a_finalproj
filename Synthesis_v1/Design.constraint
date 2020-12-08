@@ -1,0 +1,36 @@
+Warning: Design 'Image_Classifier' has '3' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : constraint
+        -verbose
+Design : Image_Classifier
+Version: G-2012.06-SP1
+Date   : Tue Dec  8 00:12:53 2020
+****************************************
+
+
+    Net: _0_net_
+
+    max_transition         0.48
+  - Transition Time        0.00
+  ------------------------------
+    Slack                  0.48  (MET)
+
+
+    Net: _0_net_
+
+    max_capacitance        8.00
+  - Capacitance            0.20
+  ------------------------------
+    Slack                  7.80  (MET)
+
+
+    Design: Image_Classifier
+
+    max_area               0.00
+  - Current Area       22487.41
+  ------------------------------
+    Slack              -22487.41  (VIOLATED)
+
+
+1

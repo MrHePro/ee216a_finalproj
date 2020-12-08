@@ -1,0 +1,207 @@
+Warning: Design 'Image_Classifier' has '3' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 2
+        -max_paths 10
+Design : Image_Classifier
+Version: G-2012.06-SP1
+Date   : Tue Dec  8 00:12:50 2020
+****************************************
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: Max_Sel/p12[0] (internal pin)
+  Endpoint: Image_Number[0]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   ForQA                 saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  Max_Sel/p12[0] (Max_Selector)            0.00       0.00 r
+  Image_Number[0] (out)                    0.00       0.00 r
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: Max_Sel/p12[1] (internal pin)
+  Endpoint: Image_Number[1]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   ForQA                 saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  Max_Sel/p12[1] (Max_Selector)            0.00       0.00 r
+  Image_Number[1] (out)                    0.00       0.00 r
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: Max_Sel/p12[2] (internal pin)
+  Endpoint: Image_Number[2]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   ForQA                 saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  Max_Sel/p12[2] (Max_Selector)            0.00       0.00 r
+  Image_Number[2] (out)                    0.00       0.00 r
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: Max_Sel/p12[3] (internal pin)
+  Endpoint: Image_Number[3]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   ForQA                 saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  Max_Sel/p12[3] (Max_Selector)            0.00       0.00 r
+  Image_Number[3] (out)                    0.00       0.00 r
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: CTRL/p8 (internal pin)
+  Endpoint: Output_Valid
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   ForQA                 saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  CTRL/p8 (Ctrl_Unit)                      0.00       0.00 r
+  Output_Valid (out)                       0.00       0.00 r
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: Max_Sel/p12[0] (internal pin)
+  Endpoint: Image_Number[0]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   ForQA                 saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  Max_Sel/p12[0] (Max_Selector)            0.00       0.00 f
+  Image_Number[0] (out)                    0.00       0.00 f
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: Max_Sel/p12[1] (internal pin)
+  Endpoint: Image_Number[1]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   ForQA                 saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  Max_Sel/p12[1] (Max_Selector)            0.00       0.00 f
+  Image_Number[1] (out)                    0.00       0.00 f
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: Max_Sel/p12[2] (internal pin)
+  Endpoint: Image_Number[2]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   ForQA                 saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  Max_Sel/p12[2] (Max_Selector)            0.00       0.00 f
+  Image_Number[2] (out)                    0.00       0.00 f
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: Max_Sel/p12[3] (internal pin)
+  Endpoint: Image_Number[3]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   ForQA                 saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  Max_Sel/p12[3] (Max_Selector)            0.00       0.00 f
+  Image_Number[3] (out)                    0.00       0.00 f
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: CTRL/p8 (internal pin)
+  Endpoint: Output_Valid
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   ForQA                 saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  CTRL/p8 (Ctrl_Unit)                      0.00       0.00 f
+  Output_Valid (out)                       0.00       0.00 f
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

@@ -1,0 +1,16 @@
+Warning: Design 'Image_Classifier' has '3' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : resources
+Design : Image_Classifier
+Version: G-2012.06-SP1
+Date   : Tue Dec  8 00:12:53 2020
+****************************************
+
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+1
