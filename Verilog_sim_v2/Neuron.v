@@ -4,16 +4,17 @@ module Neuron(
  input GlobalReset,
  input [14914:0] WX,
  input [7849:0] PIXEL,
- input [4:0] WeightX_Select,
- input [4:0] PixelX_Select,
- input [27:0] ENX_Int,
+ input [6:0] WeightX_Select,
+ input [6:0] PixelX_Select,
+ input [7:0] ENX_Int,
+ input [13:0] ENX_Int_2,
  input ENX,
  output [25:0] Out_X
 );
 
-    wire    [531:0] WeightX;
+    wire    [132:0] WeightX;
     wire    [18:0]  BetaX;
-    wire    [279:0] PixelX;
+    wire    [69:0]  PixelX;
 
 
     //Select Beta for this Neuron
@@ -29,20 +30,28 @@ module Neuron(
     Mux_Pixel Pixel_MUX(PIXEL[7849:10], PixelX_Select, PixelX);
 
     //Mult Stage
-    wire    [26*28-1:0] Result_28;
-    Mult_Stage mult_56_28(clk, GlobalReset, WeightX, PixelX, Result_28);
+    wire    [26*7-1:0] Result_784;
+    Mult_Stage mult_14_7(clk, GlobalReset, WeightX, PixelX, Result_784);
 
-    //Adder 5 stage
-    wire    [25:0]      Result_1;
-    Adder_5Stage add_28_1(clk, GlobalReset, Result_28, 26'd0, Result_1);
+    //Adder 3 stage
+    wire    [25:0]      Result_112;
+    Adder_3Stage add_7_1(clk, GlobalReset, Result_784, 26'd0, Result_112);
 
     //Reg Stage
-    wire    [26*28-1:0] NX_28;
-    Reg_Stage reg_1_28(clk, GlobalReset, Result_1, ENX_Int, NX_28);
+    wire    [26*8-1:0] NX_8;
+    Reg_Stage reg_1_8(clk, GlobalReset, Result_112, ENX_Int, NX_8);
 
-    //Adder 5 stage
+    //Adder 3 stage
+    wire    [25:0]      Result_14;
+    Adder_3Stage add_8_1(clk, GlobalReset, NX_8[26*8-1:26], NX_8[25:0], Result_14);
+
+    //Reg Stage2
+    wire    [26*14-1:0] NX_14;
+    Reg_Stage_14 reg_1_14(clk, GlobalReset, Result_14, ENX_Int_2, NX_14);
+
+    //Adder 4 stage
     wire    [25:0]      Result_Final;
-    Adder_5Stage add_29_1(clk, GlobalReset, NX_28, {{7{BetaX[18]}},BetaX}, Result_Final);
+    Adder_3Stage add_14_1(clk, GlobalReset, NX_8, {{7{BetaX[18]}},BetaX}, Result_Final);
 
     //Final Flop for pipeline
     FF_EN #(26) reg_ff_28(clk, GlobalReset, Result_Final, Out_X, ENX);

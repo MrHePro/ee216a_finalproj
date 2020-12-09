@@ -6,21 +6,21 @@ Problem: 7_240: 198*524287 =
 module Mult_Stage(
     input clk,
     input GlobalReset,
-    input [531:0] WeightX,
-    input [279:0] PixelX,
-    output[26*28-1:0] Output_syn
+    input [132:0] WeightX,
+    input [69:0] PixelX,
+    output[26*7-1:0] Output_syn
 );
 
-    wire [531:0]    WeightPort;
-    wire [279:0]    PixelPort;
+    wire [132:0]    WeightPort;
+    wire [69:0]    PixelPort;
 
     //pipelined reg
-    FF #(28*19) FF_Weight(clk, GlobalReset, WeightX, WeightPort);
-    FF #(28*10) FF_Pixel(clk, GlobalReset, PixelX, PixelPort);
+    FF #(7*19) FF_Weight(clk, GlobalReset, WeightX, WeightPort);
+    FF #(7*10) FF_Pixel(clk, GlobalReset, PixelX, PixelPort);
 
     //28 multiplier
     genvar k;
-    generate for (k = 0; k <= 27; k = k + 1) begin
+    generate for (k = 0; k <= 6; k = k + 1) begin
         FixedPointMultiplier Mult(clk, GlobalReset, WeightPort[19*k+18:19*k], PixelPort[10*k+9:10*k], Output_syn[26*k+25:26*k]);
     end
     endgenerate
