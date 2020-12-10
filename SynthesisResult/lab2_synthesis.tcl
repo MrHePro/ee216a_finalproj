@@ -2,20 +2,42 @@
 # DESIGN COMPILER:  Logic Synthesis Tool                                       #
 ################################################################################
 remove_design -all
+set hdlin_vrlg_std "2001"
 
-# Add search paths for our technology libs.
+################################################################################
+# Add search paths for our technology libs.                                    #
+################################################################################
 set search_path "$search_path . ./verilog /w/apps2/public.2/tech/synopsys/32-28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm" 
 set target_library "saed32rvt_ff1p16vn40c.db saed32rvt_ss0p95v125c.db"
 set link_library "* saed32rvt_ff1p16vn40c.db saed32rvt_ss0p95v125c.db dw_foundation.sldb"
 set synthetic_library "dw_foundation.sldb"
 
+################################################################################
 # Define work path (note: The work path must exist, so you need to create a folder WORK first)
+################################################################################
 define_design_lib WORK -path ./WORK
-set alib_library_analysis_path “./alib-52/”
+set alib_library_analysis_path ï¿½./alib-52/ï¿½
 
-# Read the gate-level verilog files
-analyze -format verilog {alu.v}
-set DESIGN_NAME alu
+################################################################################
+# Read the gate-level verilog files                                            #
+################################################################################
+analyze -format verilog {Verilog/Adder_5Stage.v \
+                            Verilog/Ctrl_Unit.v \
+                            Verilog/FF_EN.v \
+                            Verilog/FF.v \
+                            Verilog/FixedPointAdder.v \
+                            Verilog/FixedPointMultiplier.v \
+                            Verilog/Image_Classifier.v \
+                            Verilog/MAX_Selector.v \
+                            Verilog/Mult_Stage.v \
+                            Verilog/Mux_Pixel.v \
+                            Verilog/Mux_Weight.v \
+                            Verilog/Neuron.v \
+                            Verilog/Reg_Stage.v \
+                            Verilog/SynLib.v \
+                            Verilog/define.h}
+
+set DESIGN_NAME Image_Classifier
 
 elaborate $DESIGN_NAME
 current_design $DESIGN_NAME
@@ -24,25 +46,26 @@ link
 
 set_operating_conditions -min ff1p16vn40c -max ss0p95v125c
 
-
+################################################################################
 # Describe the clock waveform & setup operating conditions
+################################################################################
 set Tclk 8.0
 set TCU  0.1
 set IN_DEL 0.6
 set IN_DEL_MIN 0.3
 set OUT_DEL 0.6
 set OUT_DEL_MIN 0.3
-set ALL_IN_BUT_CLK [remove_from_collection [all_inputs] "clk_p_i"]
+set ALL_IN_BUT_CLK [remove_from_collection [all_inputs] "clk"]
 
-create_clock -name "clk_p_i" -period $Tclk [get_ports "clk_p_i"]
-set_fix_hold clk_p_i
-set_dont_touch_network [get_clocks "clk_p_i"]
-set_clock_uncertainty $TCU [get_clocks "clk_p_i"]
+create_clock -name "clk" -period $Tclk [get_ports "clk"]
+set_fix_hold clk
+set_dont_touch_network [get_clocks "clk"]
+set_clock_uncertainty $TCU [get_clocks "clk"]
 
-set_input_delay $IN_DEL-clock "clk_p_i" $ALL_IN_BUT_CLK
-set_input_delay -min $IN_DEL_MIN -clock "clk_p_i" $ALL_IN_BUT_CLK
-set_output_delay $OUT_DEL -clock "clk_p_i" [all_outputs]
-set_output_delay -min $OUT_DEL_MIN -clock "clk_p_i" [all_outputs]
+set_input_delay $IN_DEL-clock "clk" $ALL_IN_BUT_CLK
+set_input_delay -min $IN_DEL_MIN -clock "clk" $ALL_IN_BUT_CLK
+set_output_delay $OUT_DEL -clock "clk" [all_outputs]
+set_output_delay -min $OUT_DEL_MIN -clock "clk" [all_outputs]
 
 set_max_area 0.0
 
