@@ -13,8 +13,8 @@ module Ctrl_Unit(
 //cntr for cycles
 reg [6:0] cnt;
 always@(posedge clk, posedge Input_Valid) begin
-    if(GlobalReset == 1) cnt <= 0;
-    else if (Input_Valid == 1) cnt <= 0;
+    if(Input_Valid == 1) cnt <= 0;
+    else if (GlobalReset == 1) cnt <= 0;
     else cnt <= cnt+1;
 end
 
@@ -27,11 +27,13 @@ reg     W_INC, P_INC;
 assign WeightX_Select = WeightX_Select_FF;
 assign PixelX_Select  = PixelX_Select_FF;
 always@(posedge clk, posedge Input_Valid) begin
-    if(GlobalReset == 1 || Input_Valid == 1) WeightX_Select_FF <= 5'd0;
+    if(Input_Valid == 1) WeightX_Select_FF <= 5'd0;
+    else if(GlobalReset == 1) WeightX_Select_FF <= 5'd0;
     else if(W_INC) WeightX_Select_FF <= WeightX_Select + 1;
 end
 always@(posedge clk, posedge Input_Valid) begin
-    if(GlobalReset == 1 || Input_Valid == 1) PixelX_Select_FF  <= 5'd0;
+    if(Input_Valid == 1) PixelX_Select_FF  <= 5'd0;
+    else if(GlobalReset == 1) PixelX_Select_FF  <= 5'd0;
     else if(W_INC) PixelX_Select_FF  <= PixelX_Select  + 1;
 end
 //FF_EN #(5) w_flop(clk, GlobalReset, WeightX_Select_FF, WeightX_Select, W_INC_IN);
@@ -42,7 +44,8 @@ reg     [27:0]   ENX_Int_FF;
 reg     E_SHFT;
 assign ENX_Int = ENX_Int_FF;
 always@(posedge clk, posedge Input_Valid) begin
-    if(GlobalReset == 1 || Input_Valid == 1) ENX_Int_FF <= 28'b0000000000000000000000000001;
+    if(Input_Valid == 1) ENX_Int_FF <= 28'b0000000000000000000000000001;
+    else if(GlobalReset == 1)  ENX_Int_FF <= 28'b0000000000000000000000000001;
     else if(E_SHFT) ENX_Int_FF <= ENX_Int << 1;
 end
 
