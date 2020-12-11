@@ -1,0 +1,1368 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 2
+        -max_paths 10
+Design : Image_Classifier
+Version: G-2012.06-SP1
+Date   : Thu Dec 10 13:30:03 2020
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: N0/mult_56_28/multiplier_28[0].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: N0/mult_56_28/multiplier_28[0].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   2000000               saed32rvt_ff1p16vn40c
+  Image_Classifier_DW_mult_tc_279
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  N0/mult_56_28/multiplier_28[0].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  N0/mult_56_28/multiplier_28[0].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]/Q (DFFARX1_RVT)
+                                                          0.05       0.05 f
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/a[1] (Image_Classifier_DW_mult_tc_279)
+                                                          0.00       0.05 f
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U537/Y (NBUFFX2_RVT)
+                                                          0.03       0.08 f
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U495/Y (XNOR2X1_RVT)
+                                                          0.04       0.12 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U599/Y (AND2X2_RVT)
+                                                          0.03       0.15 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U816/Y (AO22X1_RVT)
+                                                          0.02       0.17 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U470/Y (XNOR2X1_RVT)
+                                                          0.03       0.21 f
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U812/Y (NAND2X0_RVT)
+                                                          0.01       0.22 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U811/Y (AO22X1_RVT)
+                                                          0.02       0.25 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U809/Y (OR2X1_RVT)
+                                                          0.02       0.27 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U808/Y (AO22X1_RVT)
+                                                          0.02       0.29 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U807/Y (OR2X1_RVT)
+                                                          0.02       0.31 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U806/Y (AO22X1_RVT)
+                                                          0.02       0.33 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U805/Y (AO22X1_RVT)
+                                                          0.02       0.35 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U804/Y (AO22X1_RVT)
+                                                          0.02       0.38 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U803/Y (AO22X1_RVT)
+                                                          0.02       0.40 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U802/Y (AO22X1_RVT)
+                                                          0.02       0.42 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U789/Y (OR2X1_RVT)
+                                                          0.02       0.44 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U788/Y (AO22X1_RVT)
+                                                          0.02       0.47 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U775/Y (OR2X1_RVT)
+                                                          0.02       0.48 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U774/Y (AO22X1_RVT)
+                                                          0.02       0.51 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U761/Y (OR2X1_RVT)
+                                                          0.02       0.53 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U760/Y (AO22X1_RVT)
+                                                          0.02       0.55 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U747/Y (OR2X1_RVT)
+                                                          0.02       0.57 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U746/Y (AO22X1_RVT)
+                                                          0.02       0.59 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U733/Y (OR2X1_RVT)
+                                                          0.02       0.61 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U732/Y (AO22X1_RVT)
+                                                          0.02       0.64 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U719/Y (OR2X1_RVT)
+                                                          0.02       0.66 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U718/Y (AO22X1_RVT)
+                                                          0.02       0.68 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U705/Y (OR2X1_RVT)
+                                                          0.02       0.70 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U704/Y (AO22X1_RVT)
+                                                          0.02       0.72 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U691/Y (OR2X1_RVT)
+                                                          0.02       0.74 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U690/Y (AO22X1_RVT)
+                                                          0.02       0.77 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U676/Y (OR2X1_RVT)
+                                                          0.02       0.79 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U675/Y (AO22X1_RVT)
+                                                          0.02       0.81 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U664/Y (OR2X1_RVT)
+                                                          0.02       0.83 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U663/Y (AO22X1_RVT)
+                                                          0.02       0.85 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U652/Y (OR2X1_RVT)
+                                                          0.02       0.87 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U651/Y (AO22X1_RVT)
+                                                          0.02       0.89 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U641/Y (OR2X1_RVT)
+                                                          0.02       0.91 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U640/Y (AO22X1_RVT)
+                                                          0.02       0.94 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U633/Y (OR2X1_RVT)
+                                                          0.02       0.95 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U632/Y (AO22X1_RVT)
+                                                          0.02       0.98 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U625/Y (OR2X1_RVT)
+                                                          0.02       1.00 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U624/Y (AO22X1_RVT)
+                                                          0.02       1.02 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U623/Y (OR2X1_RVT)
+                                                          0.02       1.04 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U622/Y (AO22X1_RVT)
+                                                          0.02       1.06 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/U466/Y (XNOR3X1_RVT)
+                                                          0.06       1.11 r
+  N0/mult_56_28/multiplier_28[0].Mult/mult_50/product[25] (Image_Classifier_DW_mult_tc_279)
+                                                          0.00       1.11 r
+  N0/mult_56_28/multiplier_28[0].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]/D (DFFARX1_RVT)
+                                                          0.00       1.11 r
+  data arrival time                                                  1.11
+
+  clock clk (rise edge)                                   8.00       8.00
+  clock network delay (ideal)                             0.00       8.00
+  clock uncertainty                                      -0.10       7.90
+  N0/mult_56_28/multiplier_28[0].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]/CLK (DFFARX1_RVT)
+                                                          0.00       7.90 r
+  library setup time                                     -0.02       7.88
+  data required time                                                 7.88
+  --------------------------------------------------------------------------
+  data required time                                                 7.88
+  data arrival time                                                 -1.11
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.77
+
+
+  Startpoint: N0/mult_56_28/multiplier_28[1].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: N0/mult_56_28/multiplier_28[1].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   2000000               saed32rvt_ff1p16vn40c
+  Image_Classifier_DW_mult_tc_278
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  N0/mult_56_28/multiplier_28[1].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  N0/mult_56_28/multiplier_28[1].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]/Q (DFFARX1_RVT)
+                                                          0.05       0.05 f
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/a[1] (Image_Classifier_DW_mult_tc_278)
+                                                          0.00       0.05 f
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U537/Y (NBUFFX2_RVT)
+                                                          0.03       0.08 f
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U495/Y (XNOR2X1_RVT)
+                                                          0.04       0.12 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U599/Y (AND2X2_RVT)
+                                                          0.03       0.15 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U816/Y (AO22X1_RVT)
+                                                          0.02       0.17 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U470/Y (XNOR2X1_RVT)
+                                                          0.03       0.21 f
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U812/Y (NAND2X0_RVT)
+                                                          0.01       0.22 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U811/Y (AO22X1_RVT)
+                                                          0.02       0.25 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U809/Y (OR2X1_RVT)
+                                                          0.02       0.27 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U808/Y (AO22X1_RVT)
+                                                          0.02       0.29 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U807/Y (OR2X1_RVT)
+                                                          0.02       0.31 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U806/Y (AO22X1_RVT)
+                                                          0.02       0.33 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U805/Y (AO22X1_RVT)
+                                                          0.02       0.35 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U804/Y (AO22X1_RVT)
+                                                          0.02       0.38 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U803/Y (AO22X1_RVT)
+                                                          0.02       0.40 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U802/Y (AO22X1_RVT)
+                                                          0.02       0.42 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U789/Y (OR2X1_RVT)
+                                                          0.02       0.44 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U788/Y (AO22X1_RVT)
+                                                          0.02       0.47 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U775/Y (OR2X1_RVT)
+                                                          0.02       0.48 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U774/Y (AO22X1_RVT)
+                                                          0.02       0.51 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U761/Y (OR2X1_RVT)
+                                                          0.02       0.53 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U760/Y (AO22X1_RVT)
+                                                          0.02       0.55 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U747/Y (OR2X1_RVT)
+                                                          0.02       0.57 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U746/Y (AO22X1_RVT)
+                                                          0.02       0.59 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U733/Y (OR2X1_RVT)
+                                                          0.02       0.61 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U732/Y (AO22X1_RVT)
+                                                          0.02       0.64 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U719/Y (OR2X1_RVT)
+                                                          0.02       0.66 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U718/Y (AO22X1_RVT)
+                                                          0.02       0.68 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U705/Y (OR2X1_RVT)
+                                                          0.02       0.70 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U704/Y (AO22X1_RVT)
+                                                          0.02       0.72 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U691/Y (OR2X1_RVT)
+                                                          0.02       0.74 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U690/Y (AO22X1_RVT)
+                                                          0.02       0.77 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U676/Y (OR2X1_RVT)
+                                                          0.02       0.79 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U675/Y (AO22X1_RVT)
+                                                          0.02       0.81 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U664/Y (OR2X1_RVT)
+                                                          0.02       0.83 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U663/Y (AO22X1_RVT)
+                                                          0.02       0.85 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U652/Y (OR2X1_RVT)
+                                                          0.02       0.87 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U651/Y (AO22X1_RVT)
+                                                          0.02       0.89 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U641/Y (OR2X1_RVT)
+                                                          0.02       0.91 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U640/Y (AO22X1_RVT)
+                                                          0.02       0.94 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U633/Y (OR2X1_RVT)
+                                                          0.02       0.95 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U632/Y (AO22X1_RVT)
+                                                          0.02       0.98 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U625/Y (OR2X1_RVT)
+                                                          0.02       1.00 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U624/Y (AO22X1_RVT)
+                                                          0.02       1.02 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U623/Y (OR2X1_RVT)
+                                                          0.02       1.04 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U622/Y (AO22X1_RVT)
+                                                          0.02       1.06 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/U466/Y (XNOR3X1_RVT)
+                                                          0.06       1.11 r
+  N0/mult_56_28/multiplier_28[1].Mult/mult_50/product[25] (Image_Classifier_DW_mult_tc_278)
+                                                          0.00       1.11 r
+  N0/mult_56_28/multiplier_28[1].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]/D (DFFARX1_RVT)
+                                                          0.00       1.11 r
+  data arrival time                                                  1.11
+
+  clock clk (rise edge)                                   8.00       8.00
+  clock network delay (ideal)                             0.00       8.00
+  clock uncertainty                                      -0.10       7.90
+  N0/mult_56_28/multiplier_28[1].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]/CLK (DFFARX1_RVT)
+                                                          0.00       7.90 r
+  library setup time                                     -0.02       7.88
+  data required time                                                 7.88
+  --------------------------------------------------------------------------
+  data required time                                                 7.88
+  data arrival time                                                 -1.11
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.77
+
+
+  Startpoint: N0/mult_56_28/multiplier_28[2].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: N0/mult_56_28/multiplier_28[2].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   2000000               saed32rvt_ff1p16vn40c
+  Image_Classifier_DW_mult_tc_277
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  N0/mult_56_28/multiplier_28[2].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  N0/mult_56_28/multiplier_28[2].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]/Q (DFFARX1_RVT)
+                                                          0.05       0.05 f
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/a[1] (Image_Classifier_DW_mult_tc_277)
+                                                          0.00       0.05 f
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U537/Y (NBUFFX2_RVT)
+                                                          0.03       0.08 f
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U495/Y (XNOR2X1_RVT)
+                                                          0.04       0.12 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U599/Y (AND2X2_RVT)
+                                                          0.03       0.15 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U816/Y (AO22X1_RVT)
+                                                          0.02       0.17 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U470/Y (XNOR2X1_RVT)
+                                                          0.03       0.21 f
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U812/Y (NAND2X0_RVT)
+                                                          0.01       0.22 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U811/Y (AO22X1_RVT)
+                                                          0.02       0.25 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U809/Y (OR2X1_RVT)
+                                                          0.02       0.27 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U808/Y (AO22X1_RVT)
+                                                          0.02       0.29 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U807/Y (OR2X1_RVT)
+                                                          0.02       0.31 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U806/Y (AO22X1_RVT)
+                                                          0.02       0.33 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U805/Y (AO22X1_RVT)
+                                                          0.02       0.35 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U804/Y (AO22X1_RVT)
+                                                          0.02       0.38 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U803/Y (AO22X1_RVT)
+                                                          0.02       0.40 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U802/Y (AO22X1_RVT)
+                                                          0.02       0.42 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U789/Y (OR2X1_RVT)
+                                                          0.02       0.44 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U788/Y (AO22X1_RVT)
+                                                          0.02       0.47 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U775/Y (OR2X1_RVT)
+                                                          0.02       0.48 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U774/Y (AO22X1_RVT)
+                                                          0.02       0.51 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U761/Y (OR2X1_RVT)
+                                                          0.02       0.53 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U760/Y (AO22X1_RVT)
+                                                          0.02       0.55 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U747/Y (OR2X1_RVT)
+                                                          0.02       0.57 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U746/Y (AO22X1_RVT)
+                                                          0.02       0.59 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U733/Y (OR2X1_RVT)
+                                                          0.02       0.61 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U732/Y (AO22X1_RVT)
+                                                          0.02       0.64 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U719/Y (OR2X1_RVT)
+                                                          0.02       0.66 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U718/Y (AO22X1_RVT)
+                                                          0.02       0.68 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U705/Y (OR2X1_RVT)
+                                                          0.02       0.70 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U704/Y (AO22X1_RVT)
+                                                          0.02       0.72 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U691/Y (OR2X1_RVT)
+                                                          0.02       0.74 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U690/Y (AO22X1_RVT)
+                                                          0.02       0.77 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U676/Y (OR2X1_RVT)
+                                                          0.02       0.79 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U675/Y (AO22X1_RVT)
+                                                          0.02       0.81 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U664/Y (OR2X1_RVT)
+                                                          0.02       0.83 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U663/Y (AO22X1_RVT)
+                                                          0.02       0.85 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U652/Y (OR2X1_RVT)
+                                                          0.02       0.87 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U651/Y (AO22X1_RVT)
+                                                          0.02       0.89 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U641/Y (OR2X1_RVT)
+                                                          0.02       0.91 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U640/Y (AO22X1_RVT)
+                                                          0.02       0.94 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U633/Y (OR2X1_RVT)
+                                                          0.02       0.95 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U632/Y (AO22X1_RVT)
+                                                          0.02       0.98 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U625/Y (OR2X1_RVT)
+                                                          0.02       1.00 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U624/Y (AO22X1_RVT)
+                                                          0.02       1.02 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U623/Y (OR2X1_RVT)
+                                                          0.02       1.04 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U622/Y (AO22X1_RVT)
+                                                          0.02       1.06 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/U466/Y (XNOR3X1_RVT)
+                                                          0.06       1.11 r
+  N0/mult_56_28/multiplier_28[2].Mult/mult_50/product[25] (Image_Classifier_DW_mult_tc_277)
+                                                          0.00       1.11 r
+  N0/mult_56_28/multiplier_28[2].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]/D (DFFARX1_RVT)
+                                                          0.00       1.11 r
+  data arrival time                                                  1.11
+
+  clock clk (rise edge)                                   8.00       8.00
+  clock network delay (ideal)                             0.00       8.00
+  clock uncertainty                                      -0.10       7.90
+  N0/mult_56_28/multiplier_28[2].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]/CLK (DFFARX1_RVT)
+                                                          0.00       7.90 r
+  library setup time                                     -0.02       7.88
+  data required time                                                 7.88
+  --------------------------------------------------------------------------
+  data required time                                                 7.88
+  data arrival time                                                 -1.11
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.77
+
+
+  Startpoint: N0/mult_56_28/multiplier_28[3].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: N0/mult_56_28/multiplier_28[3].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   2000000               saed32rvt_ff1p16vn40c
+  Image_Classifier_DW_mult_tc_276
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  N0/mult_56_28/multiplier_28[3].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  N0/mult_56_28/multiplier_28[3].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]/Q (DFFARX1_RVT)
+                                                          0.05       0.05 f
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/a[1] (Image_Classifier_DW_mult_tc_276)
+                                                          0.00       0.05 f
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U537/Y (NBUFFX2_RVT)
+                                                          0.03       0.08 f
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U495/Y (XNOR2X1_RVT)
+                                                          0.04       0.12 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U599/Y (AND2X2_RVT)
+                                                          0.03       0.15 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U816/Y (AO22X1_RVT)
+                                                          0.02       0.17 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U470/Y (XNOR2X1_RVT)
+                                                          0.03       0.21 f
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U812/Y (NAND2X0_RVT)
+                                                          0.01       0.22 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U811/Y (AO22X1_RVT)
+                                                          0.02       0.25 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U809/Y (OR2X1_RVT)
+                                                          0.02       0.27 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U808/Y (AO22X1_RVT)
+                                                          0.02       0.29 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U807/Y (OR2X1_RVT)
+                                                          0.02       0.31 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U806/Y (AO22X1_RVT)
+                                                          0.02       0.33 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U805/Y (AO22X1_RVT)
+                                                          0.02       0.35 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U804/Y (AO22X1_RVT)
+                                                          0.02       0.38 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U803/Y (AO22X1_RVT)
+                                                          0.02       0.40 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U802/Y (AO22X1_RVT)
+                                                          0.02       0.42 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U789/Y (OR2X1_RVT)
+                                                          0.02       0.44 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U788/Y (AO22X1_RVT)
+                                                          0.02       0.47 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U775/Y (OR2X1_RVT)
+                                                          0.02       0.48 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U774/Y (AO22X1_RVT)
+                                                          0.02       0.51 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U761/Y (OR2X1_RVT)
+                                                          0.02       0.53 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U760/Y (AO22X1_RVT)
+                                                          0.02       0.55 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U747/Y (OR2X1_RVT)
+                                                          0.02       0.57 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U746/Y (AO22X1_RVT)
+                                                          0.02       0.59 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U733/Y (OR2X1_RVT)
+                                                          0.02       0.61 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U732/Y (AO22X1_RVT)
+                                                          0.02       0.64 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U719/Y (OR2X1_RVT)
+                                                          0.02       0.66 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U718/Y (AO22X1_RVT)
+                                                          0.02       0.68 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U705/Y (OR2X1_RVT)
+                                                          0.02       0.70 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U704/Y (AO22X1_RVT)
+                                                          0.02       0.72 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U691/Y (OR2X1_RVT)
+                                                          0.02       0.74 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U690/Y (AO22X1_RVT)
+                                                          0.02       0.77 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U676/Y (OR2X1_RVT)
+                                                          0.02       0.79 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U675/Y (AO22X1_RVT)
+                                                          0.02       0.81 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U664/Y (OR2X1_RVT)
+                                                          0.02       0.83 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U663/Y (AO22X1_RVT)
+                                                          0.02       0.85 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U652/Y (OR2X1_RVT)
+                                                          0.02       0.87 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U651/Y (AO22X1_RVT)
+                                                          0.02       0.89 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U641/Y (OR2X1_RVT)
+                                                          0.02       0.91 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U640/Y (AO22X1_RVT)
+                                                          0.02       0.94 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U633/Y (OR2X1_RVT)
+                                                          0.02       0.95 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U632/Y (AO22X1_RVT)
+                                                          0.02       0.98 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U625/Y (OR2X1_RVT)
+                                                          0.02       1.00 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U624/Y (AO22X1_RVT)
+                                                          0.02       1.02 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U623/Y (OR2X1_RVT)
+                                                          0.02       1.04 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U622/Y (AO22X1_RVT)
+                                                          0.02       1.06 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/U466/Y (XNOR3X1_RVT)
+                                                          0.06       1.11 r
+  N0/mult_56_28/multiplier_28[3].Mult/mult_50/product[25] (Image_Classifier_DW_mult_tc_276)
+                                                          0.00       1.11 r
+  N0/mult_56_28/multiplier_28[3].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]/D (DFFARX1_RVT)
+                                                          0.00       1.11 r
+  data arrival time                                                  1.11
+
+  clock clk (rise edge)                                   8.00       8.00
+  clock network delay (ideal)                             0.00       8.00
+  clock uncertainty                                      -0.10       7.90
+  N0/mult_56_28/multiplier_28[3].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]/CLK (DFFARX1_RVT)
+                                                          0.00       7.90 r
+  library setup time                                     -0.02       7.88
+  data required time                                                 7.88
+  --------------------------------------------------------------------------
+  data required time                                                 7.88
+  data arrival time                                                 -1.11
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.77
+
+
+  Startpoint: N0/mult_56_28/multiplier_28[4].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: N0/mult_56_28/multiplier_28[4].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   2000000               saed32rvt_ff1p16vn40c
+  Image_Classifier_DW_mult_tc_275
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  N0/mult_56_28/multiplier_28[4].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  N0/mult_56_28/multiplier_28[4].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]/Q (DFFARX1_RVT)
+                                                          0.05       0.05 f
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/a[1] (Image_Classifier_DW_mult_tc_275)
+                                                          0.00       0.05 f
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U537/Y (NBUFFX2_RVT)
+                                                          0.03       0.08 f
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U495/Y (XNOR2X1_RVT)
+                                                          0.04       0.12 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U599/Y (AND2X2_RVT)
+                                                          0.03       0.15 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U816/Y (AO22X1_RVT)
+                                                          0.02       0.17 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U470/Y (XNOR2X1_RVT)
+                                                          0.03       0.21 f
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U812/Y (NAND2X0_RVT)
+                                                          0.01       0.22 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U811/Y (AO22X1_RVT)
+                                                          0.02       0.25 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U809/Y (OR2X1_RVT)
+                                                          0.02       0.27 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U808/Y (AO22X1_RVT)
+                                                          0.02       0.29 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U807/Y (OR2X1_RVT)
+                                                          0.02       0.31 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U806/Y (AO22X1_RVT)
+                                                          0.02       0.33 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U805/Y (AO22X1_RVT)
+                                                          0.02       0.35 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U804/Y (AO22X1_RVT)
+                                                          0.02       0.38 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U803/Y (AO22X1_RVT)
+                                                          0.02       0.40 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U802/Y (AO22X1_RVT)
+                                                          0.02       0.42 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U789/Y (OR2X1_RVT)
+                                                          0.02       0.44 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U788/Y (AO22X1_RVT)
+                                                          0.02       0.47 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U775/Y (OR2X1_RVT)
+                                                          0.02       0.48 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U774/Y (AO22X1_RVT)
+                                                          0.02       0.51 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U761/Y (OR2X1_RVT)
+                                                          0.02       0.53 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U760/Y (AO22X1_RVT)
+                                                          0.02       0.55 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U747/Y (OR2X1_RVT)
+                                                          0.02       0.57 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U746/Y (AO22X1_RVT)
+                                                          0.02       0.59 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U733/Y (OR2X1_RVT)
+                                                          0.02       0.61 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U732/Y (AO22X1_RVT)
+                                                          0.02       0.64 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U719/Y (OR2X1_RVT)
+                                                          0.02       0.66 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U718/Y (AO22X1_RVT)
+                                                          0.02       0.68 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U705/Y (OR2X1_RVT)
+                                                          0.02       0.70 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U704/Y (AO22X1_RVT)
+                                                          0.02       0.72 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U691/Y (OR2X1_RVT)
+                                                          0.02       0.74 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U690/Y (AO22X1_RVT)
+                                                          0.02       0.77 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U676/Y (OR2X1_RVT)
+                                                          0.02       0.79 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U675/Y (AO22X1_RVT)
+                                                          0.02       0.81 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U664/Y (OR2X1_RVT)
+                                                          0.02       0.83 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U663/Y (AO22X1_RVT)
+                                                          0.02       0.85 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U652/Y (OR2X1_RVT)
+                                                          0.02       0.87 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U651/Y (AO22X1_RVT)
+                                                          0.02       0.89 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U641/Y (OR2X1_RVT)
+                                                          0.02       0.91 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U640/Y (AO22X1_RVT)
+                                                          0.02       0.94 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U633/Y (OR2X1_RVT)
+                                                          0.02       0.95 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U632/Y (AO22X1_RVT)
+                                                          0.02       0.98 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U625/Y (OR2X1_RVT)
+                                                          0.02       1.00 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U624/Y (AO22X1_RVT)
+                                                          0.02       1.02 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U623/Y (OR2X1_RVT)
+                                                          0.02       1.04 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U622/Y (AO22X1_RVT)
+                                                          0.02       1.06 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/U466/Y (XNOR3X1_RVT)
+                                                          0.06       1.11 r
+  N0/mult_56_28/multiplier_28[4].Mult/mult_50/product[25] (Image_Classifier_DW_mult_tc_275)
+                                                          0.00       1.11 r
+  N0/mult_56_28/multiplier_28[4].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]/D (DFFARX1_RVT)
+                                                          0.00       1.11 r
+  data arrival time                                                  1.11
+
+  clock clk (rise edge)                                   8.00       8.00
+  clock network delay (ideal)                             0.00       8.00
+  clock uncertainty                                      -0.10       7.90
+  N0/mult_56_28/multiplier_28[4].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]/CLK (DFFARX1_RVT)
+                                                          0.00       7.90 r
+  library setup time                                     -0.02       7.88
+  data required time                                                 7.88
+  --------------------------------------------------------------------------
+  data required time                                                 7.88
+  data arrival time                                                 -1.11
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.77
+
+
+  Startpoint: N0/mult_56_28/multiplier_28[5].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: N0/mult_56_28/multiplier_28[5].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   2000000               saed32rvt_ff1p16vn40c
+  Image_Classifier_DW_mult_tc_274
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  N0/mult_56_28/multiplier_28[5].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  N0/mult_56_28/multiplier_28[5].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]/Q (DFFARX1_RVT)
+                                                          0.05       0.05 f
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/a[1] (Image_Classifier_DW_mult_tc_274)
+                                                          0.00       0.05 f
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U537/Y (NBUFFX2_RVT)
+                                                          0.03       0.08 f
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U495/Y (XNOR2X1_RVT)
+                                                          0.04       0.12 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U599/Y (AND2X2_RVT)
+                                                          0.03       0.15 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U816/Y (AO22X1_RVT)
+                                                          0.02       0.17 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U470/Y (XNOR2X1_RVT)
+                                                          0.03       0.21 f
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U812/Y (NAND2X0_RVT)
+                                                          0.01       0.22 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U811/Y (AO22X1_RVT)
+                                                          0.02       0.25 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U809/Y (OR2X1_RVT)
+                                                          0.02       0.27 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U808/Y (AO22X1_RVT)
+                                                          0.02       0.29 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U807/Y (OR2X1_RVT)
+                                                          0.02       0.31 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U806/Y (AO22X1_RVT)
+                                                          0.02       0.33 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U805/Y (AO22X1_RVT)
+                                                          0.02       0.35 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U804/Y (AO22X1_RVT)
+                                                          0.02       0.38 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U803/Y (AO22X1_RVT)
+                                                          0.02       0.40 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U802/Y (AO22X1_RVT)
+                                                          0.02       0.42 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U789/Y (OR2X1_RVT)
+                                                          0.02       0.44 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U788/Y (AO22X1_RVT)
+                                                          0.02       0.47 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U775/Y (OR2X1_RVT)
+                                                          0.02       0.48 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U774/Y (AO22X1_RVT)
+                                                          0.02       0.51 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U761/Y (OR2X1_RVT)
+                                                          0.02       0.53 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U760/Y (AO22X1_RVT)
+                                                          0.02       0.55 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U747/Y (OR2X1_RVT)
+                                                          0.02       0.57 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U746/Y (AO22X1_RVT)
+                                                          0.02       0.59 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U733/Y (OR2X1_RVT)
+                                                          0.02       0.61 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U732/Y (AO22X1_RVT)
+                                                          0.02       0.64 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U719/Y (OR2X1_RVT)
+                                                          0.02       0.66 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U718/Y (AO22X1_RVT)
+                                                          0.02       0.68 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U705/Y (OR2X1_RVT)
+                                                          0.02       0.70 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U704/Y (AO22X1_RVT)
+                                                          0.02       0.72 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U691/Y (OR2X1_RVT)
+                                                          0.02       0.74 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U690/Y (AO22X1_RVT)
+                                                          0.02       0.77 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U676/Y (OR2X1_RVT)
+                                                          0.02       0.79 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U675/Y (AO22X1_RVT)
+                                                          0.02       0.81 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U664/Y (OR2X1_RVT)
+                                                          0.02       0.83 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U663/Y (AO22X1_RVT)
+                                                          0.02       0.85 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U652/Y (OR2X1_RVT)
+                                                          0.02       0.87 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U651/Y (AO22X1_RVT)
+                                                          0.02       0.89 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U641/Y (OR2X1_RVT)
+                                                          0.02       0.91 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U640/Y (AO22X1_RVT)
+                                                          0.02       0.94 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U633/Y (OR2X1_RVT)
+                                                          0.02       0.95 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U632/Y (AO22X1_RVT)
+                                                          0.02       0.98 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U625/Y (OR2X1_RVT)
+                                                          0.02       1.00 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U624/Y (AO22X1_RVT)
+                                                          0.02       1.02 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U623/Y (OR2X1_RVT)
+                                                          0.02       1.04 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U622/Y (AO22X1_RVT)
+                                                          0.02       1.06 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/U466/Y (XNOR3X1_RVT)
+                                                          0.06       1.11 r
+  N0/mult_56_28/multiplier_28[5].Mult/mult_50/product[25] (Image_Classifier_DW_mult_tc_274)
+                                                          0.00       1.11 r
+  N0/mult_56_28/multiplier_28[5].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]/D (DFFARX1_RVT)
+                                                          0.00       1.11 r
+  data arrival time                                                  1.11
+
+  clock clk (rise edge)                                   8.00       8.00
+  clock network delay (ideal)                             0.00       8.00
+  clock uncertainty                                      -0.10       7.90
+  N0/mult_56_28/multiplier_28[5].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]/CLK (DFFARX1_RVT)
+                                                          0.00       7.90 r
+  library setup time                                     -0.02       7.88
+  data required time                                                 7.88
+  --------------------------------------------------------------------------
+  data required time                                                 7.88
+  data arrival time                                                 -1.11
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.77
+
+
+  Startpoint: N0/mult_56_28/multiplier_28[6].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: N0/mult_56_28/multiplier_28[6].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   2000000               saed32rvt_ff1p16vn40c
+  Image_Classifier_DW_mult_tc_273
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  N0/mult_56_28/multiplier_28[6].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  N0/mult_56_28/multiplier_28[6].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]/Q (DFFARX1_RVT)
+                                                          0.05       0.05 f
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/a[1] (Image_Classifier_DW_mult_tc_273)
+                                                          0.00       0.05 f
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U537/Y (NBUFFX2_RVT)
+                                                          0.03       0.08 f
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U495/Y (XNOR2X1_RVT)
+                                                          0.04       0.12 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U599/Y (AND2X2_RVT)
+                                                          0.03       0.15 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U816/Y (AO22X1_RVT)
+                                                          0.02       0.17 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U470/Y (XNOR2X1_RVT)
+                                                          0.03       0.21 f
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U812/Y (NAND2X0_RVT)
+                                                          0.01       0.22 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U811/Y (AO22X1_RVT)
+                                                          0.02       0.25 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U809/Y (OR2X1_RVT)
+                                                          0.02       0.27 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U808/Y (AO22X1_RVT)
+                                                          0.02       0.29 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U807/Y (OR2X1_RVT)
+                                                          0.02       0.31 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U806/Y (AO22X1_RVT)
+                                                          0.02       0.33 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U805/Y (AO22X1_RVT)
+                                                          0.02       0.35 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U804/Y (AO22X1_RVT)
+                                                          0.02       0.38 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U803/Y (AO22X1_RVT)
+                                                          0.02       0.40 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U802/Y (AO22X1_RVT)
+                                                          0.02       0.42 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U789/Y (OR2X1_RVT)
+                                                          0.02       0.44 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U788/Y (AO22X1_RVT)
+                                                          0.02       0.47 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U775/Y (OR2X1_RVT)
+                                                          0.02       0.48 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U774/Y (AO22X1_RVT)
+                                                          0.02       0.51 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U761/Y (OR2X1_RVT)
+                                                          0.02       0.53 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U760/Y (AO22X1_RVT)
+                                                          0.02       0.55 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U747/Y (OR2X1_RVT)
+                                                          0.02       0.57 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U746/Y (AO22X1_RVT)
+                                                          0.02       0.59 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U733/Y (OR2X1_RVT)
+                                                          0.02       0.61 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U732/Y (AO22X1_RVT)
+                                                          0.02       0.64 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U719/Y (OR2X1_RVT)
+                                                          0.02       0.66 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U718/Y (AO22X1_RVT)
+                                                          0.02       0.68 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U705/Y (OR2X1_RVT)
+                                                          0.02       0.70 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U704/Y (AO22X1_RVT)
+                                                          0.02       0.72 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U691/Y (OR2X1_RVT)
+                                                          0.02       0.74 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U690/Y (AO22X1_RVT)
+                                                          0.02       0.77 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U676/Y (OR2X1_RVT)
+                                                          0.02       0.79 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U675/Y (AO22X1_RVT)
+                                                          0.02       0.81 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U664/Y (OR2X1_RVT)
+                                                          0.02       0.83 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U663/Y (AO22X1_RVT)
+                                                          0.02       0.85 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U652/Y (OR2X1_RVT)
+                                                          0.02       0.87 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U651/Y (AO22X1_RVT)
+                                                          0.02       0.89 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U641/Y (OR2X1_RVT)
+                                                          0.02       0.91 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U640/Y (AO22X1_RVT)
+                                                          0.02       0.94 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U633/Y (OR2X1_RVT)
+                                                          0.02       0.95 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U632/Y (AO22X1_RVT)
+                                                          0.02       0.98 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U625/Y (OR2X1_RVT)
+                                                          0.02       1.00 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U624/Y (AO22X1_RVT)
+                                                          0.02       1.02 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U623/Y (OR2X1_RVT)
+                                                          0.02       1.04 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U622/Y (AO22X1_RVT)
+                                                          0.02       1.06 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/U466/Y (XNOR3X1_RVT)
+                                                          0.06       1.11 r
+  N0/mult_56_28/multiplier_28[6].Mult/mult_50/product[25] (Image_Classifier_DW_mult_tc_273)
+                                                          0.00       1.11 r
+  N0/mult_56_28/multiplier_28[6].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]/D (DFFARX1_RVT)
+                                                          0.00       1.11 r
+  data arrival time                                                  1.11
+
+  clock clk (rise edge)                                   8.00       8.00
+  clock network delay (ideal)                             0.00       8.00
+  clock uncertainty                                      -0.10       7.90
+  N0/mult_56_28/multiplier_28[6].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]/CLK (DFFARX1_RVT)
+                                                          0.00       7.90 r
+  library setup time                                     -0.02       7.88
+  data required time                                                 7.88
+  --------------------------------------------------------------------------
+  data required time                                                 7.88
+  data arrival time                                                 -1.11
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.77
+
+
+  Startpoint: N0/mult_56_28/multiplier_28[7].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: N0/mult_56_28/multiplier_28[7].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   2000000               saed32rvt_ff1p16vn40c
+  Image_Classifier_DW_mult_tc_272
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  N0/mult_56_28/multiplier_28[7].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  N0/mult_56_28/multiplier_28[7].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]/Q (DFFARX1_RVT)
+                                                          0.05       0.05 f
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/a[1] (Image_Classifier_DW_mult_tc_272)
+                                                          0.00       0.05 f
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U537/Y (NBUFFX2_RVT)
+                                                          0.03       0.08 f
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U495/Y (XNOR2X1_RVT)
+                                                          0.04       0.12 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U599/Y (AND2X2_RVT)
+                                                          0.03       0.15 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U816/Y (AO22X1_RVT)
+                                                          0.02       0.17 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U470/Y (XNOR2X1_RVT)
+                                                          0.03       0.21 f
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U812/Y (NAND2X0_RVT)
+                                                          0.01       0.22 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U811/Y (AO22X1_RVT)
+                                                          0.02       0.25 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U809/Y (OR2X1_RVT)
+                                                          0.02       0.27 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U808/Y (AO22X1_RVT)
+                                                          0.02       0.29 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U807/Y (OR2X1_RVT)
+                                                          0.02       0.31 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U806/Y (AO22X1_RVT)
+                                                          0.02       0.33 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U805/Y (AO22X1_RVT)
+                                                          0.02       0.35 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U804/Y (AO22X1_RVT)
+                                                          0.02       0.38 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U803/Y (AO22X1_RVT)
+                                                          0.02       0.40 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U802/Y (AO22X1_RVT)
+                                                          0.02       0.42 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U789/Y (OR2X1_RVT)
+                                                          0.02       0.44 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U788/Y (AO22X1_RVT)
+                                                          0.02       0.47 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U775/Y (OR2X1_RVT)
+                                                          0.02       0.48 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U774/Y (AO22X1_RVT)
+                                                          0.02       0.51 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U761/Y (OR2X1_RVT)
+                                                          0.02       0.53 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U760/Y (AO22X1_RVT)
+                                                          0.02       0.55 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U747/Y (OR2X1_RVT)
+                                                          0.02       0.57 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U746/Y (AO22X1_RVT)
+                                                          0.02       0.59 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U733/Y (OR2X1_RVT)
+                                                          0.02       0.61 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U732/Y (AO22X1_RVT)
+                                                          0.02       0.64 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U719/Y (OR2X1_RVT)
+                                                          0.02       0.66 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U718/Y (AO22X1_RVT)
+                                                          0.02       0.68 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U705/Y (OR2X1_RVT)
+                                                          0.02       0.70 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U704/Y (AO22X1_RVT)
+                                                          0.02       0.72 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U691/Y (OR2X1_RVT)
+                                                          0.02       0.74 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U690/Y (AO22X1_RVT)
+                                                          0.02       0.77 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U676/Y (OR2X1_RVT)
+                                                          0.02       0.79 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U675/Y (AO22X1_RVT)
+                                                          0.02       0.81 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U664/Y (OR2X1_RVT)
+                                                          0.02       0.83 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U663/Y (AO22X1_RVT)
+                                                          0.02       0.85 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U652/Y (OR2X1_RVT)
+                                                          0.02       0.87 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U651/Y (AO22X1_RVT)
+                                                          0.02       0.89 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U641/Y (OR2X1_RVT)
+                                                          0.02       0.91 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U640/Y (AO22X1_RVT)
+                                                          0.02       0.94 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U633/Y (OR2X1_RVT)
+                                                          0.02       0.95 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U632/Y (AO22X1_RVT)
+                                                          0.02       0.98 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U625/Y (OR2X1_RVT)
+                                                          0.02       1.00 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U624/Y (AO22X1_RVT)
+                                                          0.02       1.02 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U623/Y (OR2X1_RVT)
+                                                          0.02       1.04 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U622/Y (AO22X1_RVT)
+                                                          0.02       1.06 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/U466/Y (XNOR3X1_RVT)
+                                                          0.06       1.11 r
+  N0/mult_56_28/multiplier_28[7].Mult/mult_50/product[25] (Image_Classifier_DW_mult_tc_272)
+                                                          0.00       1.11 r
+  N0/mult_56_28/multiplier_28[7].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]/D (DFFARX1_RVT)
+                                                          0.00       1.11 r
+  data arrival time                                                  1.11
+
+  clock clk (rise edge)                                   8.00       8.00
+  clock network delay (ideal)                             0.00       8.00
+  clock uncertainty                                      -0.10       7.90
+  N0/mult_56_28/multiplier_28[7].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]/CLK (DFFARX1_RVT)
+                                                          0.00       7.90 r
+  library setup time                                     -0.02       7.88
+  data required time                                                 7.88
+  --------------------------------------------------------------------------
+  data required time                                                 7.88
+  data arrival time                                                 -1.11
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.77
+
+
+  Startpoint: N0/mult_56_28/multiplier_28[8].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: N0/mult_56_28/multiplier_28[8].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   2000000               saed32rvt_ff1p16vn40c
+  Image_Classifier_DW_mult_tc_271
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  N0/mult_56_28/multiplier_28[8].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  N0/mult_56_28/multiplier_28[8].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]/Q (DFFARX1_RVT)
+                                                          0.05       0.05 f
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/a[1] (Image_Classifier_DW_mult_tc_271)
+                                                          0.00       0.05 f
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U537/Y (NBUFFX2_RVT)
+                                                          0.03       0.08 f
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U495/Y (XNOR2X1_RVT)
+                                                          0.04       0.12 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U599/Y (AND2X2_RVT)
+                                                          0.03       0.15 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U816/Y (AO22X1_RVT)
+                                                          0.02       0.17 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U470/Y (XNOR2X1_RVT)
+                                                          0.03       0.21 f
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U812/Y (NAND2X0_RVT)
+                                                          0.01       0.22 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U811/Y (AO22X1_RVT)
+                                                          0.02       0.25 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U809/Y (OR2X1_RVT)
+                                                          0.02       0.27 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U808/Y (AO22X1_RVT)
+                                                          0.02       0.29 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U807/Y (OR2X1_RVT)
+                                                          0.02       0.31 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U806/Y (AO22X1_RVT)
+                                                          0.02       0.33 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U805/Y (AO22X1_RVT)
+                                                          0.02       0.35 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U804/Y (AO22X1_RVT)
+                                                          0.02       0.38 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U803/Y (AO22X1_RVT)
+                                                          0.02       0.40 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U802/Y (AO22X1_RVT)
+                                                          0.02       0.42 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U789/Y (OR2X1_RVT)
+                                                          0.02       0.44 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U788/Y (AO22X1_RVT)
+                                                          0.02       0.47 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U775/Y (OR2X1_RVT)
+                                                          0.02       0.48 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U774/Y (AO22X1_RVT)
+                                                          0.02       0.51 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U761/Y (OR2X1_RVT)
+                                                          0.02       0.53 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U760/Y (AO22X1_RVT)
+                                                          0.02       0.55 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U747/Y (OR2X1_RVT)
+                                                          0.02       0.57 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U746/Y (AO22X1_RVT)
+                                                          0.02       0.59 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U733/Y (OR2X1_RVT)
+                                                          0.02       0.61 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U732/Y (AO22X1_RVT)
+                                                          0.02       0.64 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U719/Y (OR2X1_RVT)
+                                                          0.02       0.66 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U718/Y (AO22X1_RVT)
+                                                          0.02       0.68 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U705/Y (OR2X1_RVT)
+                                                          0.02       0.70 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U704/Y (AO22X1_RVT)
+                                                          0.02       0.72 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U691/Y (OR2X1_RVT)
+                                                          0.02       0.74 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U690/Y (AO22X1_RVT)
+                                                          0.02       0.77 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U676/Y (OR2X1_RVT)
+                                                          0.02       0.79 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U675/Y (AO22X1_RVT)
+                                                          0.02       0.81 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U664/Y (OR2X1_RVT)
+                                                          0.02       0.83 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U663/Y (AO22X1_RVT)
+                                                          0.02       0.85 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U652/Y (OR2X1_RVT)
+                                                          0.02       0.87 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U651/Y (AO22X1_RVT)
+                                                          0.02       0.89 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U641/Y (OR2X1_RVT)
+                                                          0.02       0.91 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U640/Y (AO22X1_RVT)
+                                                          0.02       0.94 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U633/Y (OR2X1_RVT)
+                                                          0.02       0.95 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U632/Y (AO22X1_RVT)
+                                                          0.02       0.98 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U625/Y (OR2X1_RVT)
+                                                          0.02       1.00 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U624/Y (AO22X1_RVT)
+                                                          0.02       1.02 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U623/Y (OR2X1_RVT)
+                                                          0.02       1.04 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U622/Y (AO22X1_RVT)
+                                                          0.02       1.06 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/U466/Y (XNOR3X1_RVT)
+                                                          0.06       1.11 r
+  N0/mult_56_28/multiplier_28[8].Mult/mult_50/product[25] (Image_Classifier_DW_mult_tc_271)
+                                                          0.00       1.11 r
+  N0/mult_56_28/multiplier_28[8].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]/D (DFFARX1_RVT)
+                                                          0.00       1.11 r
+  data arrival time                                                  1.11
+
+  clock clk (rise edge)                                   8.00       8.00
+  clock network delay (ideal)                             0.00       8.00
+  clock uncertainty                                      -0.10       7.90
+  N0/mult_56_28/multiplier_28[8].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]/CLK (DFFARX1_RVT)
+                                                          0.00       7.90 r
+  library setup time                                     -0.02       7.88
+  data required time                                                 7.88
+  --------------------------------------------------------------------------
+  data required time                                                 7.88
+  data arrival time                                                 -1.11
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.77
+
+
+  Startpoint: N0/mult_56_28/multiplier_28[9].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: N0/mult_56_28/multiplier_28[9].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Image_Classifier   2000000               saed32rvt_ff1p16vn40c
+  Image_Classifier_DW_mult_tc_270
+                     8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  N0/mult_56_28/multiplier_28[9].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  N0/mult_56_28/multiplier_28[9].Mult/Multiplier_25b_18f_block.multInp1_block/GenBlock.theDelay/outreg_reg[1]/Q (DFFARX1_RVT)
+                                                          0.05       0.05 f
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/a[1] (Image_Classifier_DW_mult_tc_270)
+                                                          0.00       0.05 f
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U537/Y (NBUFFX2_RVT)
+                                                          0.03       0.08 f
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U495/Y (XNOR2X1_RVT)
+                                                          0.04       0.12 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U599/Y (AND2X2_RVT)
+                                                          0.03       0.15 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U816/Y (AO22X1_RVT)
+                                                          0.02       0.17 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U470/Y (XNOR2X1_RVT)
+                                                          0.03       0.21 f
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U812/Y (NAND2X0_RVT)
+                                                          0.01       0.22 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U811/Y (AO22X1_RVT)
+                                                          0.02       0.25 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U809/Y (OR2X1_RVT)
+                                                          0.02       0.27 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U808/Y (AO22X1_RVT)
+                                                          0.02       0.29 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U807/Y (OR2X1_RVT)
+                                                          0.02       0.31 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U806/Y (AO22X1_RVT)
+                                                          0.02       0.33 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U805/Y (AO22X1_RVT)
+                                                          0.02       0.35 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U804/Y (AO22X1_RVT)
+                                                          0.02       0.38 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U803/Y (AO22X1_RVT)
+                                                          0.02       0.40 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U802/Y (AO22X1_RVT)
+                                                          0.02       0.42 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U789/Y (OR2X1_RVT)
+                                                          0.02       0.44 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U788/Y (AO22X1_RVT)
+                                                          0.02       0.47 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U775/Y (OR2X1_RVT)
+                                                          0.02       0.48 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U774/Y (AO22X1_RVT)
+                                                          0.02       0.51 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U761/Y (OR2X1_RVT)
+                                                          0.02       0.53 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U760/Y (AO22X1_RVT)
+                                                          0.02       0.55 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U747/Y (OR2X1_RVT)
+                                                          0.02       0.57 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U746/Y (AO22X1_RVT)
+                                                          0.02       0.59 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U733/Y (OR2X1_RVT)
+                                                          0.02       0.61 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U732/Y (AO22X1_RVT)
+                                                          0.02       0.64 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U719/Y (OR2X1_RVT)
+                                                          0.02       0.66 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U718/Y (AO22X1_RVT)
+                                                          0.02       0.68 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U705/Y (OR2X1_RVT)
+                                                          0.02       0.70 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U704/Y (AO22X1_RVT)
+                                                          0.02       0.72 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U691/Y (OR2X1_RVT)
+                                                          0.02       0.74 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U690/Y (AO22X1_RVT)
+                                                          0.02       0.77 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U676/Y (OR2X1_RVT)
+                                                          0.02       0.79 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U675/Y (AO22X1_RVT)
+                                                          0.02       0.81 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U664/Y (OR2X1_RVT)
+                                                          0.02       0.83 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U663/Y (AO22X1_RVT)
+                                                          0.02       0.85 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U652/Y (OR2X1_RVT)
+                                                          0.02       0.87 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U651/Y (AO22X1_RVT)
+                                                          0.02       0.89 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U641/Y (OR2X1_RVT)
+                                                          0.02       0.91 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U640/Y (AO22X1_RVT)
+                                                          0.02       0.94 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U633/Y (OR2X1_RVT)
+                                                          0.02       0.95 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U632/Y (AO22X1_RVT)
+                                                          0.02       0.98 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U625/Y (OR2X1_RVT)
+                                                          0.02       1.00 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U624/Y (AO22X1_RVT)
+                                                          0.02       1.02 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U623/Y (OR2X1_RVT)
+                                                          0.02       1.04 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U622/Y (AO22X1_RVT)
+                                                          0.02       1.06 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/U466/Y (XNOR3X1_RVT)
+                                                          0.06       1.11 r
+  N0/mult_56_28/multiplier_28[9].Mult/mult_50/product[25] (Image_Classifier_DW_mult_tc_270)
+                                                          0.00       1.11 r
+  N0/mult_56_28/multiplier_28[9].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]/D (DFFARX1_RVT)
+                                                          0.00       1.11 r
+  data arrival time                                                  1.11
+
+  clock clk (rise edge)                                   8.00       8.00
+  clock network delay (ideal)                             0.00       8.00
+  clock uncertainty                                      -0.10       7.90
+  N0/mult_56_28/multiplier_28[9].Mult/Multiplier_25b_18f_block.multOut_block/GenBlock.theDelay/delayline_reg[0][25]/CLK (DFFARX1_RVT)
+                                                          0.00       7.90 r
+  library setup time                                     -0.02       7.88
+  data required time                                                 7.88
+  --------------------------------------------------------------------------
+  data required time                                                 7.88
+  data arrival time                                                 -1.11
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.77
+
+
+1
