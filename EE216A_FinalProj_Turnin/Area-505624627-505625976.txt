@@ -1,0 +1,1692 @@
+ 
+****************************************
+Report : area
+Design : Image_Classifier
+Version: G-2012.06-SP1
+Date   : Fri Dec 11 02:59:05 2020
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_ff1p16vn40c (File: /w/apps2/public.2/tech/synopsys/32-28nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ff1p16vn40c.db)
+
+Number of ports:                       157008
+Number of nets:                        380921
+Number of cells:                       201537
+Number of combinational cells:         118426
+Number of sequential cells:             82271
+Number of macros:                           0
+Number of buf/inv:                      25818
+Number of references:                     875
+
+Combinational area:       862894.358154
+Buf/Inv area:             66688.403653
+Noncombinational area:    581742.234587
+Net Interconnect area:    935733.530926
+
+Total cell area:          1444636.592741
+Total area:               2380370.123667
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area               Local cell area
+                                  ---------------------  -------------------------------- 
+Hierarchical cell                 Absolute      Percent  Combi-       Noncombi-    Black
+                                  Total         Total    national     national     boxes   Design
+--------------------------------  ------------  -------  -----------  -----------  ------  -------------------------------
+Image_Classifier                  1444636.5927    100.0  309394.9065  581742.2346  0.0000  Image_Classifier
+CTRL/add_18                            22.1105      0.0      22.1105       0.0000  0.0000  Image_Classifier_DW01_inc_2
+Max_Sel/gt_59                         195.6909      0.0     195.6909       0.0000  0.0000  Image_Classifier_DW_cmp_8
+Max_Sel/gt_60                         195.6909      0.0     195.6909       0.0000  0.0000  Image_Classifier_DW_cmp_7
+Max_Sel/gt_61                         195.6909      0.0     195.6909       0.0000  0.0000  Image_Classifier_DW_cmp_6
+Max_Sel/gt_62                         195.6909      0.0     195.6909       0.0000  0.0000  Image_Classifier_DW_cmp_5
+Max_Sel/gt_63                         195.6909      0.0     195.6909       0.0000  0.0000  Image_Classifier_DW_cmp_4
+Max_Sel/gt_65                         195.6909      0.0     195.6909       0.0000  0.0000  Image_Classifier_DW_cmp_3
+Max_Sel/gt_66                         195.6909      0.0     195.6909       0.0000  0.0000  Image_Classifier_DW_cmp_2
+Max_Sel/gt_68                         195.6909      0.0     195.6909       0.0000  0.0000  Image_Classifier_DW_cmp_1
+Max_Sel/gt_70                         195.6909      0.0     195.6909       0.0000  0.0000  Image_Classifier_DW_cmp_0
+N0/add_28_1/Add_1/add_46              127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_532
+N0/add_28_1/adder_14[0].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_559
+N0/add_28_1/adder_14[10].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_549
+N0/add_28_1/adder_14[11].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_548
+N0/add_28_1/adder_14[12].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_547
+N0/add_28_1/adder_14[13].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_546
+N0/add_28_1/adder_14[1].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_558
+N0/add_28_1/adder_14[2].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_557
+N0/add_28_1/adder_14[3].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_556
+N0/add_28_1/adder_14[4].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_555
+N0/add_28_1/adder_14[5].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_554
+N0/add_28_1/adder_14[6].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_553
+N0/add_28_1/adder_14[7].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_552
+N0/add_28_1/adder_14[8].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_551
+N0/add_28_1/adder_14[9].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_550
+N0/add_28_1/adder_2[0].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_534
+N0/add_28_1/adder_2[1].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_533
+N0/add_28_1/adder_4[0].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_538
+N0/add_28_1/adder_4[1].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_537
+N0/add_28_1/adder_4[2].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_536
+N0/add_28_1/adder_7[0].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_545
+N0/add_28_1/adder_7[1].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_544
+N0/add_28_1/adder_7[2].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_543
+N0/add_28_1/adder_7[3].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_542
+N0/add_28_1/adder_7[4].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_541
+N0/add_28_1/adder_7[5].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_540
+N0/add_28_1/adder_7[6].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_539
+N0/add_29_1/Add_1/add_46              127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_504
+N0/add_29_1/adder_14[0].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_531
+N0/add_29_1/adder_14[10].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_521
+N0/add_29_1/adder_14[11].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_520
+N0/add_29_1/adder_14[12].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_519
+N0/add_29_1/adder_14[13].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_518
+N0/add_29_1/adder_14[1].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_530
+N0/add_29_1/adder_14[2].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_529
+N0/add_29_1/adder_14[3].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_528
+N0/add_29_1/adder_14[4].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_527
+N0/add_29_1/adder_14[5].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_526
+N0/add_29_1/adder_14[6].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_525
+N0/add_29_1/adder_14[7].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_524
+N0/add_29_1/adder_14[8].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_523
+N0/add_29_1/adder_14[9].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_522
+N0/add_29_1/adder_2[0].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_506
+N0/add_29_1/adder_2[1].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_505
+N0/add_29_1/adder_4[0].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_510
+N0/add_29_1/adder_4[1].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_509
+N0/add_29_1/adder_4[2].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_508
+N0/add_29_1/adder_4[3].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_507
+N0/add_29_1/adder_7[0].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_517
+N0/add_29_1/adder_7[1].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_516
+N0/add_29_1/adder_7[2].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_515
+N0/add_29_1/adder_7[3].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_514
+N0/add_29_1/adder_7[4].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_513
+N0/add_29_1/adder_7[5].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_512
+N0/add_29_1/adder_7[6].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_511
+N0/mult_56_28/multiplier_28[0].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_279
+N0/mult_56_28/multiplier_28[10].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_269
+N0/mult_56_28/multiplier_28[11].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_268
+N0/mult_56_28/multiplier_28[12].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_267
+N0/mult_56_28/multiplier_28[13].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_266
+N0/mult_56_28/multiplier_28[14].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_265
+N0/mult_56_28/multiplier_28[15].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_264
+N0/mult_56_28/multiplier_28[16].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_263
+N0/mult_56_28/multiplier_28[17].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_262
+N0/mult_56_28/multiplier_28[18].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_261
+N0/mult_56_28/multiplier_28[19].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_260
+N0/mult_56_28/multiplier_28[1].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_278
+N0/mult_56_28/multiplier_28[20].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_259
+N0/mult_56_28/multiplier_28[21].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_258
+N0/mult_56_28/multiplier_28[22].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_257
+N0/mult_56_28/multiplier_28[23].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_256
+N0/mult_56_28/multiplier_28[24].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_255
+N0/mult_56_28/multiplier_28[25].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_254
+N0/mult_56_28/multiplier_28[26].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_253
+N0/mult_56_28/multiplier_28[27].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_252
+N0/mult_56_28/multiplier_28[2].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_277
+N0/mult_56_28/multiplier_28[3].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_276
+N0/mult_56_28/multiplier_28[4].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_275
+N0/mult_56_28/multiplier_28[5].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_274
+N0/mult_56_28/multiplier_28[6].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_273
+N0/mult_56_28/multiplier_28[7].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_272
+N0/mult_56_28/multiplier_28[8].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_271
+N0/mult_56_28/multiplier_28[9].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_270
+N1/add_28_1/Add_1/add_46              127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_476
+N1/add_28_1/adder_14[0].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_503
+N1/add_28_1/adder_14[10].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_493
+N1/add_28_1/adder_14[11].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_492
+N1/add_28_1/adder_14[12].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_491
+N1/add_28_1/adder_14[13].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_490
+N1/add_28_1/adder_14[1].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_502
+N1/add_28_1/adder_14[2].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_501
+N1/add_28_1/adder_14[3].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_500
+N1/add_28_1/adder_14[4].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_499
+N1/add_28_1/adder_14[5].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_498
+N1/add_28_1/adder_14[6].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_497
+N1/add_28_1/adder_14[7].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_496
+N1/add_28_1/adder_14[8].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_495
+N1/add_28_1/adder_14[9].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_494
+N1/add_28_1/adder_2[0].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_478
+N1/add_28_1/adder_2[1].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_477
+N1/add_28_1/adder_4[0].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_482
+N1/add_28_1/adder_4[1].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_481
+N1/add_28_1/adder_4[2].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_480
+N1/add_28_1/adder_7[0].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_489
+N1/add_28_1/adder_7[1].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_488
+N1/add_28_1/adder_7[2].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_487
+N1/add_28_1/adder_7[3].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_486
+N1/add_28_1/adder_7[4].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_485
+N1/add_28_1/adder_7[5].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_484
+N1/add_28_1/adder_7[6].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_483
+N1/add_29_1/Add_1/add_46              127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_448
+N1/add_29_1/adder_14[0].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_475
+N1/add_29_1/adder_14[10].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_465
+N1/add_29_1/adder_14[11].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_464
+N1/add_29_1/adder_14[12].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_463
+N1/add_29_1/adder_14[13].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_462
+N1/add_29_1/adder_14[1].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_474
+N1/add_29_1/adder_14[2].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_473
+N1/add_29_1/adder_14[3].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_472
+N1/add_29_1/adder_14[4].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_471
+N1/add_29_1/adder_14[5].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_470
+N1/add_29_1/adder_14[6].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_469
+N1/add_29_1/adder_14[7].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_468
+N1/add_29_1/adder_14[8].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_467
+N1/add_29_1/adder_14[9].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_466
+N1/add_29_1/adder_2[0].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_450
+N1/add_29_1/adder_2[1].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_449
+N1/add_29_1/adder_4[0].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_454
+N1/add_29_1/adder_4[1].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_453
+N1/add_29_1/adder_4[2].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_452
+N1/add_29_1/adder_4[3].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_451
+N1/add_29_1/adder_7[0].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_461
+N1/add_29_1/adder_7[1].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_460
+N1/add_29_1/adder_7[2].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_459
+N1/add_29_1/adder_7[3].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_458
+N1/add_29_1/adder_7[4].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_457
+N1/add_29_1/adder_7[5].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_456
+N1/add_29_1/adder_7[6].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_455
+N1/mult_56_28/multiplier_28[0].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_251
+N1/mult_56_28/multiplier_28[10].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_241
+N1/mult_56_28/multiplier_28[11].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_240
+N1/mult_56_28/multiplier_28[12].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_239
+N1/mult_56_28/multiplier_28[13].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_238
+N1/mult_56_28/multiplier_28[14].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_237
+N1/mult_56_28/multiplier_28[15].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_236
+N1/mult_56_28/multiplier_28[16].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_235
+N1/mult_56_28/multiplier_28[17].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_234
+N1/mult_56_28/multiplier_28[18].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_233
+N1/mult_56_28/multiplier_28[19].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_232
+N1/mult_56_28/multiplier_28[1].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_250
+N1/mult_56_28/multiplier_28[20].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_231
+N1/mult_56_28/multiplier_28[21].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_230
+N1/mult_56_28/multiplier_28[22].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_229
+N1/mult_56_28/multiplier_28[23].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_228
+N1/mult_56_28/multiplier_28[24].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_227
+N1/mult_56_28/multiplier_28[25].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_226
+N1/mult_56_28/multiplier_28[26].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_225
+N1/mult_56_28/multiplier_28[27].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_224
+N1/mult_56_28/multiplier_28[2].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_249
+N1/mult_56_28/multiplier_28[3].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_248
+N1/mult_56_28/multiplier_28[4].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_247
+N1/mult_56_28/multiplier_28[5].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_246
+N1/mult_56_28/multiplier_28[6].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_245
+N1/mult_56_28/multiplier_28[7].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_244
+N1/mult_56_28/multiplier_28[8].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_243
+N1/mult_56_28/multiplier_28[9].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_242
+N2/add_28_1/Add_1/add_46              127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_420
+N2/add_28_1/adder_14[0].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_447
+N2/add_28_1/adder_14[10].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_437
+N2/add_28_1/adder_14[11].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_436
+N2/add_28_1/adder_14[12].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_435
+N2/add_28_1/adder_14[13].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_434
+N2/add_28_1/adder_14[1].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_446
+N2/add_28_1/adder_14[2].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_445
+N2/add_28_1/adder_14[3].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_444
+N2/add_28_1/adder_14[4].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_443
+N2/add_28_1/adder_14[5].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_442
+N2/add_28_1/adder_14[6].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_441
+N2/add_28_1/adder_14[7].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_440
+N2/add_28_1/adder_14[8].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_439
+N2/add_28_1/adder_14[9].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_438
+N2/add_28_1/adder_2[0].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_422
+N2/add_28_1/adder_2[1].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_421
+N2/add_28_1/adder_4[0].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_426
+N2/add_28_1/adder_4[1].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_425
+N2/add_28_1/adder_4[2].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_424
+N2/add_28_1/adder_7[0].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_433
+N2/add_28_1/adder_7[1].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_432
+N2/add_28_1/adder_7[2].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_431
+N2/add_28_1/adder_7[3].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_430
+N2/add_28_1/adder_7[4].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_429
+N2/add_28_1/adder_7[5].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_428
+N2/add_28_1/adder_7[6].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_427
+N2/add_29_1/Add_1/add_46              127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_392
+N2/add_29_1/adder_14[0].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_419
+N2/add_29_1/adder_14[10].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_409
+N2/add_29_1/adder_14[11].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_408
+N2/add_29_1/adder_14[12].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_407
+N2/add_29_1/adder_14[13].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_406
+N2/add_29_1/adder_14[1].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_418
+N2/add_29_1/adder_14[2].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_417
+N2/add_29_1/adder_14[3].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_416
+N2/add_29_1/adder_14[4].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_415
+N2/add_29_1/adder_14[5].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_414
+N2/add_29_1/adder_14[6].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_413
+N2/add_29_1/adder_14[7].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_412
+N2/add_29_1/adder_14[8].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_411
+N2/add_29_1/adder_14[9].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_410
+N2/add_29_1/adder_2[0].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_394
+N2/add_29_1/adder_2[1].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_393
+N2/add_29_1/adder_4[0].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_398
+N2/add_29_1/adder_4[1].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_397
+N2/add_29_1/adder_4[2].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_396
+N2/add_29_1/adder_4[3].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_395
+N2/add_29_1/adder_7[0].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_405
+N2/add_29_1/adder_7[1].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_404
+N2/add_29_1/adder_7[2].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_403
+N2/add_29_1/adder_7[3].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_402
+N2/add_29_1/adder_7[4].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_401
+N2/add_29_1/adder_7[5].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_400
+N2/add_29_1/adder_7[6].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_399
+N2/mult_56_28/multiplier_28[0].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_223
+N2/mult_56_28/multiplier_28[10].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_213
+N2/mult_56_28/multiplier_28[11].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_212
+N2/mult_56_28/multiplier_28[12].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_211
+N2/mult_56_28/multiplier_28[13].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_210
+N2/mult_56_28/multiplier_28[14].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_209
+N2/mult_56_28/multiplier_28[15].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_208
+N2/mult_56_28/multiplier_28[16].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_207
+N2/mult_56_28/multiplier_28[17].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_206
+N2/mult_56_28/multiplier_28[18].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_205
+N2/mult_56_28/multiplier_28[19].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_204
+N2/mult_56_28/multiplier_28[1].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_222
+N2/mult_56_28/multiplier_28[20].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_203
+N2/mult_56_28/multiplier_28[21].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_202
+N2/mult_56_28/multiplier_28[22].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_201
+N2/mult_56_28/multiplier_28[23].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_200
+N2/mult_56_28/multiplier_28[24].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_199
+N2/mult_56_28/multiplier_28[25].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_198
+N2/mult_56_28/multiplier_28[26].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_197
+N2/mult_56_28/multiplier_28[27].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_196
+N2/mult_56_28/multiplier_28[2].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_221
+N2/mult_56_28/multiplier_28[3].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_220
+N2/mult_56_28/multiplier_28[4].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_219
+N2/mult_56_28/multiplier_28[5].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_218
+N2/mult_56_28/multiplier_28[6].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_217
+N2/mult_56_28/multiplier_28[7].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_216
+N2/mult_56_28/multiplier_28[8].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_215
+N2/mult_56_28/multiplier_28[9].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_214
+N3/add_28_1/Add_1/add_46              127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_364
+N3/add_28_1/adder_14[0].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_391
+N3/add_28_1/adder_14[10].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_381
+N3/add_28_1/adder_14[11].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_380
+N3/add_28_1/adder_14[12].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_379
+N3/add_28_1/adder_14[13].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_378
+N3/add_28_1/adder_14[1].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_390
+N3/add_28_1/adder_14[2].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_389
+N3/add_28_1/adder_14[3].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_388
+N3/add_28_1/adder_14[4].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_387
+N3/add_28_1/adder_14[5].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_386
+N3/add_28_1/adder_14[6].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_385
+N3/add_28_1/adder_14[7].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_384
+N3/add_28_1/adder_14[8].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_383
+N3/add_28_1/adder_14[9].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_382
+N3/add_28_1/adder_2[0].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_366
+N3/add_28_1/adder_2[1].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_365
+N3/add_28_1/adder_4[0].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_370
+N3/add_28_1/adder_4[1].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_369
+N3/add_28_1/adder_4[2].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_368
+N3/add_28_1/adder_7[0].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_377
+N3/add_28_1/adder_7[1].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_376
+N3/add_28_1/adder_7[2].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_375
+N3/add_28_1/adder_7[3].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_374
+N3/add_28_1/adder_7[4].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_373
+N3/add_28_1/adder_7[5].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_372
+N3/add_28_1/adder_7[6].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_371
+N3/add_29_1/Add_1/add_46              127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_336
+N3/add_29_1/adder_14[0].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_363
+N3/add_29_1/adder_14[10].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_353
+N3/add_29_1/adder_14[11].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_352
+N3/add_29_1/adder_14[12].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_351
+N3/add_29_1/adder_14[13].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_350
+N3/add_29_1/adder_14[1].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_362
+N3/add_29_1/adder_14[2].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_361
+N3/add_29_1/adder_14[3].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_360
+N3/add_29_1/adder_14[4].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_359
+N3/add_29_1/adder_14[5].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_358
+N3/add_29_1/adder_14[6].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_357
+N3/add_29_1/adder_14[7].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_356
+N3/add_29_1/adder_14[8].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_355
+N3/add_29_1/adder_14[9].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_354
+N3/add_29_1/adder_2[0].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_338
+N3/add_29_1/adder_2[1].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_337
+N3/add_29_1/adder_4[0].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_342
+N3/add_29_1/adder_4[1].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_341
+N3/add_29_1/adder_4[2].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_340
+N3/add_29_1/adder_4[3].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_339
+N3/add_29_1/adder_7[0].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_349
+N3/add_29_1/adder_7[1].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_348
+N3/add_29_1/adder_7[2].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_347
+N3/add_29_1/adder_7[3].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_346
+N3/add_29_1/adder_7[4].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_345
+N3/add_29_1/adder_7[5].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_344
+N3/add_29_1/adder_7[6].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_343
+N3/mult_56_28/multiplier_28[0].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_195
+N3/mult_56_28/multiplier_28[10].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_185
+N3/mult_56_28/multiplier_28[11].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_184
+N3/mult_56_28/multiplier_28[12].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_183
+N3/mult_56_28/multiplier_28[13].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_182
+N3/mult_56_28/multiplier_28[14].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_181
+N3/mult_56_28/multiplier_28[15].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_180
+N3/mult_56_28/multiplier_28[16].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_179
+N3/mult_56_28/multiplier_28[17].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_178
+N3/mult_56_28/multiplier_28[18].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_177
+N3/mult_56_28/multiplier_28[19].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_176
+N3/mult_56_28/multiplier_28[1].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_194
+N3/mult_56_28/multiplier_28[20].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_175
+N3/mult_56_28/multiplier_28[21].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_174
+N3/mult_56_28/multiplier_28[22].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_173
+N3/mult_56_28/multiplier_28[23].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_172
+N3/mult_56_28/multiplier_28[24].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_171
+N3/mult_56_28/multiplier_28[25].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_170
+N3/mult_56_28/multiplier_28[26].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_169
+N3/mult_56_28/multiplier_28[27].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_168
+N3/mult_56_28/multiplier_28[2].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_193
+N3/mult_56_28/multiplier_28[3].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_192
+N3/mult_56_28/multiplier_28[4].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_191
+N3/mult_56_28/multiplier_28[5].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_190
+N3/mult_56_28/multiplier_28[6].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_189
+N3/mult_56_28/multiplier_28[7].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_188
+N3/mult_56_28/multiplier_28[8].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_187
+N3/mult_56_28/multiplier_28[9].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_186
+N4/add_28_1/Add_1/add_46              127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_308
+N4/add_28_1/adder_14[0].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_335
+N4/add_28_1/adder_14[10].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_325
+N4/add_28_1/adder_14[11].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_324
+N4/add_28_1/adder_14[12].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_323
+N4/add_28_1/adder_14[13].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_322
+N4/add_28_1/adder_14[1].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_334
+N4/add_28_1/adder_14[2].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_333
+N4/add_28_1/adder_14[3].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_332
+N4/add_28_1/adder_14[4].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_331
+N4/add_28_1/adder_14[5].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_330
+N4/add_28_1/adder_14[6].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_329
+N4/add_28_1/adder_14[7].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_328
+N4/add_28_1/adder_14[8].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_327
+N4/add_28_1/adder_14[9].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_326
+N4/add_28_1/adder_2[0].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_310
+N4/add_28_1/adder_2[1].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_309
+N4/add_28_1/adder_4[0].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_314
+N4/add_28_1/adder_4[1].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_313
+N4/add_28_1/adder_4[2].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_312
+N4/add_28_1/adder_7[0].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_321
+N4/add_28_1/adder_7[1].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_320
+N4/add_28_1/adder_7[2].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_319
+N4/add_28_1/adder_7[3].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_318
+N4/add_28_1/adder_7[4].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_317
+N4/add_28_1/adder_7[5].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_316
+N4/add_28_1/adder_7[6].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_315
+N4/add_29_1/Add_1/add_46              127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_280
+N4/add_29_1/adder_14[0].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_307
+N4/add_29_1/adder_14[10].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_297
+N4/add_29_1/adder_14[11].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_296
+N4/add_29_1/adder_14[12].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_295
+N4/add_29_1/adder_14[13].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_294
+N4/add_29_1/adder_14[1].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_306
+N4/add_29_1/adder_14[2].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_305
+N4/add_29_1/adder_14[3].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_304
+N4/add_29_1/adder_14[4].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_303
+N4/add_29_1/adder_14[5].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_302
+N4/add_29_1/adder_14[6].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_301
+N4/add_29_1/adder_14[7].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_300
+N4/add_29_1/adder_14[8].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_299
+N4/add_29_1/adder_14[9].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_298
+N4/add_29_1/adder_2[0].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_282
+N4/add_29_1/adder_2[1].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_281
+N4/add_29_1/adder_4[0].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_286
+N4/add_29_1/adder_4[1].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_285
+N4/add_29_1/adder_4[2].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_284
+N4/add_29_1/adder_4[3].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_283
+N4/add_29_1/adder_7[0].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_293
+N4/add_29_1/adder_7[1].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_292
+N4/add_29_1/adder_7[2].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_291
+N4/add_29_1/adder_7[3].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_290
+N4/add_29_1/adder_7[4].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_289
+N4/add_29_1/adder_7[5].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_288
+N4/add_29_1/adder_7[6].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_287
+N4/mult_56_28/multiplier_28[0].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_167
+N4/mult_56_28/multiplier_28[10].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_157
+N4/mult_56_28/multiplier_28[11].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_156
+N4/mult_56_28/multiplier_28[12].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_155
+N4/mult_56_28/multiplier_28[13].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_154
+N4/mult_56_28/multiplier_28[14].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_153
+N4/mult_56_28/multiplier_28[15].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_152
+N4/mult_56_28/multiplier_28[16].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_151
+N4/mult_56_28/multiplier_28[17].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_150
+N4/mult_56_28/multiplier_28[18].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_149
+N4/mult_56_28/multiplier_28[19].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_148
+N4/mult_56_28/multiplier_28[1].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_166
+N4/mult_56_28/multiplier_28[20].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_147
+N4/mult_56_28/multiplier_28[21].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_146
+N4/mult_56_28/multiplier_28[22].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_145
+N4/mult_56_28/multiplier_28[23].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_144
+N4/mult_56_28/multiplier_28[24].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_143
+N4/mult_56_28/multiplier_28[25].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_142
+N4/mult_56_28/multiplier_28[26].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_141
+N4/mult_56_28/multiplier_28[27].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_140
+N4/mult_56_28/multiplier_28[2].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_165
+N4/mult_56_28/multiplier_28[3].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_164
+N4/mult_56_28/multiplier_28[4].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_163
+N4/mult_56_28/multiplier_28[5].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_162
+N4/mult_56_28/multiplier_28[6].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_161
+N4/mult_56_28/multiplier_28[7].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_160
+N4/mult_56_28/multiplier_28[8].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_159
+N4/mult_56_28/multiplier_28[9].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_158
+N5/add_28_1/Add_1/add_46              127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_252
+N5/add_28_1/adder_14[0].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_279
+N5/add_28_1/adder_14[10].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_269
+N5/add_28_1/adder_14[11].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_268
+N5/add_28_1/adder_14[12].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_267
+N5/add_28_1/adder_14[13].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_266
+N5/add_28_1/adder_14[1].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_278
+N5/add_28_1/adder_14[2].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_277
+N5/add_28_1/adder_14[3].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_276
+N5/add_28_1/adder_14[4].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_275
+N5/add_28_1/adder_14[5].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_274
+N5/add_28_1/adder_14[6].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_273
+N5/add_28_1/adder_14[7].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_272
+N5/add_28_1/adder_14[8].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_271
+N5/add_28_1/adder_14[9].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_270
+N5/add_28_1/adder_2[0].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_254
+N5/add_28_1/adder_2[1].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_253
+N5/add_28_1/adder_4[0].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_258
+N5/add_28_1/adder_4[1].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_257
+N5/add_28_1/adder_4[2].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_256
+N5/add_28_1/adder_7[0].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_265
+N5/add_28_1/adder_7[1].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_264
+N5/add_28_1/adder_7[2].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_263
+N5/add_28_1/adder_7[3].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_262
+N5/add_28_1/adder_7[4].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_261
+N5/add_28_1/adder_7[5].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_260
+N5/add_28_1/adder_7[6].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_259
+N5/add_29_1/Add_1/add_46              127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_224
+N5/add_29_1/adder_14[0].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_251
+N5/add_29_1/adder_14[10].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_241
+N5/add_29_1/adder_14[11].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_240
+N5/add_29_1/adder_14[12].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_239
+N5/add_29_1/adder_14[13].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_238
+N5/add_29_1/adder_14[1].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_250
+N5/add_29_1/adder_14[2].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_249
+N5/add_29_1/adder_14[3].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_248
+N5/add_29_1/adder_14[4].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_247
+N5/add_29_1/adder_14[5].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_246
+N5/add_29_1/adder_14[6].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_245
+N5/add_29_1/adder_14[7].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_244
+N5/add_29_1/adder_14[8].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_243
+N5/add_29_1/adder_14[9].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_242
+N5/add_29_1/adder_2[0].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_226
+N5/add_29_1/adder_2[1].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_225
+N5/add_29_1/adder_4[0].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_230
+N5/add_29_1/adder_4[1].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_229
+N5/add_29_1/adder_4[2].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_228
+N5/add_29_1/adder_4[3].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_227
+N5/add_29_1/adder_7[0].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_237
+N5/add_29_1/adder_7[1].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_236
+N5/add_29_1/adder_7[2].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_235
+N5/add_29_1/adder_7[3].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_234
+N5/add_29_1/adder_7[4].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_233
+N5/add_29_1/adder_7[5].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_232
+N5/add_29_1/adder_7[6].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_231
+N5/mult_56_28/multiplier_28[0].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_139
+N5/mult_56_28/multiplier_28[10].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_129
+N5/mult_56_28/multiplier_28[11].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_128
+N5/mult_56_28/multiplier_28[12].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_127
+N5/mult_56_28/multiplier_28[13].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_126
+N5/mult_56_28/multiplier_28[14].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_125
+N5/mult_56_28/multiplier_28[15].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_124
+N5/mult_56_28/multiplier_28[16].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_123
+N5/mult_56_28/multiplier_28[17].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_122
+N5/mult_56_28/multiplier_28[18].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_121
+N5/mult_56_28/multiplier_28[19].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_120
+N5/mult_56_28/multiplier_28[1].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_138
+N5/mult_56_28/multiplier_28[20].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_119
+N5/mult_56_28/multiplier_28[21].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_118
+N5/mult_56_28/multiplier_28[22].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_117
+N5/mult_56_28/multiplier_28[23].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_116
+N5/mult_56_28/multiplier_28[24].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_115
+N5/mult_56_28/multiplier_28[25].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_114
+N5/mult_56_28/multiplier_28[26].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_113
+N5/mult_56_28/multiplier_28[27].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_112
+N5/mult_56_28/multiplier_28[2].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_137
+N5/mult_56_28/multiplier_28[3].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_136
+N5/mult_56_28/multiplier_28[4].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_135
+N5/mult_56_28/multiplier_28[5].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_134
+N5/mult_56_28/multiplier_28[6].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_133
+N5/mult_56_28/multiplier_28[7].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_132
+N5/mult_56_28/multiplier_28[8].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_131
+N5/mult_56_28/multiplier_28[9].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_130
+N6/add_28_1/Add_1/add_46              127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_196
+N6/add_28_1/adder_14[0].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_223
+N6/add_28_1/adder_14[10].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_213
+N6/add_28_1/adder_14[11].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_212
+N6/add_28_1/adder_14[12].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_211
+N6/add_28_1/adder_14[13].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_210
+N6/add_28_1/adder_14[1].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_222
+N6/add_28_1/adder_14[2].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_221
+N6/add_28_1/adder_14[3].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_220
+N6/add_28_1/adder_14[4].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_219
+N6/add_28_1/adder_14[5].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_218
+N6/add_28_1/adder_14[6].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_217
+N6/add_28_1/adder_14[7].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_216
+N6/add_28_1/adder_14[8].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_215
+N6/add_28_1/adder_14[9].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_214
+N6/add_28_1/adder_2[0].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_198
+N6/add_28_1/adder_2[1].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_197
+N6/add_28_1/adder_4[0].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_202
+N6/add_28_1/adder_4[1].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_201
+N6/add_28_1/adder_4[2].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_200
+N6/add_28_1/adder_7[0].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_209
+N6/add_28_1/adder_7[1].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_208
+N6/add_28_1/adder_7[2].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_207
+N6/add_28_1/adder_7[3].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_206
+N6/add_28_1/adder_7[4].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_205
+N6/add_28_1/adder_7[5].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_204
+N6/add_28_1/adder_7[6].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_203
+N6/add_29_1/Add_1/add_46              127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_168
+N6/add_29_1/adder_14[0].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_195
+N6/add_29_1/adder_14[10].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_185
+N6/add_29_1/adder_14[11].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_184
+N6/add_29_1/adder_14[12].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_183
+N6/add_29_1/adder_14[13].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_182
+N6/add_29_1/adder_14[1].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_194
+N6/add_29_1/adder_14[2].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_193
+N6/add_29_1/adder_14[3].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_192
+N6/add_29_1/adder_14[4].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_191
+N6/add_29_1/adder_14[5].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_190
+N6/add_29_1/adder_14[6].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_189
+N6/add_29_1/adder_14[7].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_188
+N6/add_29_1/adder_14[8].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_187
+N6/add_29_1/adder_14[9].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_186
+N6/add_29_1/adder_2[0].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_170
+N6/add_29_1/adder_2[1].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_169
+N6/add_29_1/adder_4[0].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_174
+N6/add_29_1/adder_4[1].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_173
+N6/add_29_1/adder_4[2].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_172
+N6/add_29_1/adder_4[3].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_171
+N6/add_29_1/adder_7[0].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_181
+N6/add_29_1/adder_7[1].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_180
+N6/add_29_1/adder_7[2].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_179
+N6/add_29_1/adder_7[3].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_178
+N6/add_29_1/adder_7[4].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_177
+N6/add_29_1/adder_7[5].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_176
+N6/add_29_1/adder_7[6].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_175
+N6/mult_56_28/multiplier_28[0].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_111
+N6/mult_56_28/multiplier_28[10].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_101
+N6/mult_56_28/multiplier_28[11].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_100
+N6/mult_56_28/multiplier_28[12].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_99
+N6/mult_56_28/multiplier_28[13].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_98
+N6/mult_56_28/multiplier_28[14].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_97
+N6/mult_56_28/multiplier_28[15].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_96
+N6/mult_56_28/multiplier_28[16].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_95
+N6/mult_56_28/multiplier_28[17].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_94
+N6/mult_56_28/multiplier_28[18].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_93
+N6/mult_56_28/multiplier_28[19].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_92
+N6/mult_56_28/multiplier_28[1].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_110
+N6/mult_56_28/multiplier_28[20].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_91
+N6/mult_56_28/multiplier_28[21].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_90
+N6/mult_56_28/multiplier_28[22].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_89
+N6/mult_56_28/multiplier_28[23].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_88
+N6/mult_56_28/multiplier_28[24].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_87
+N6/mult_56_28/multiplier_28[25].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_86
+N6/mult_56_28/multiplier_28[26].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_85
+N6/mult_56_28/multiplier_28[27].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_84
+N6/mult_56_28/multiplier_28[2].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_109
+N6/mult_56_28/multiplier_28[3].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_108
+N6/mult_56_28/multiplier_28[4].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_107
+N6/mult_56_28/multiplier_28[5].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_106
+N6/mult_56_28/multiplier_28[6].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_105
+N6/mult_56_28/multiplier_28[7].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_104
+N6/mult_56_28/multiplier_28[8].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_103
+N6/mult_56_28/multiplier_28[9].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_102
+N7/add_28_1/Add_1/add_46              127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_140
+N7/add_28_1/adder_14[0].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_167
+N7/add_28_1/adder_14[10].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_157
+N7/add_28_1/adder_14[11].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_156
+N7/add_28_1/adder_14[12].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_155
+N7/add_28_1/adder_14[13].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_154
+N7/add_28_1/adder_14[1].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_166
+N7/add_28_1/adder_14[2].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_165
+N7/add_28_1/adder_14[3].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_164
+N7/add_28_1/adder_14[4].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_163
+N7/add_28_1/adder_14[5].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_162
+N7/add_28_1/adder_14[6].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_161
+N7/add_28_1/adder_14[7].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_160
+N7/add_28_1/adder_14[8].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_159
+N7/add_28_1/adder_14[9].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_158
+N7/add_28_1/adder_2[0].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_142
+N7/add_28_1/adder_2[1].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_141
+N7/add_28_1/adder_4[0].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_146
+N7/add_28_1/adder_4[1].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_145
+N7/add_28_1/adder_4[2].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_144
+N7/add_28_1/adder_7[0].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_153
+N7/add_28_1/adder_7[1].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_152
+N7/add_28_1/adder_7[2].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_151
+N7/add_28_1/adder_7[3].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_150
+N7/add_28_1/adder_7[4].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_149
+N7/add_28_1/adder_7[5].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_148
+N7/add_28_1/adder_7[6].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_147
+N7/add_29_1/Add_1/add_46              127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_112
+N7/add_29_1/adder_14[0].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_139
+N7/add_29_1/adder_14[10].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_129
+N7/add_29_1/adder_14[11].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_128
+N7/add_29_1/adder_14[12].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_127
+N7/add_29_1/adder_14[13].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_126
+N7/add_29_1/adder_14[1].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_138
+N7/add_29_1/adder_14[2].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_137
+N7/add_29_1/adder_14[3].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_136
+N7/add_29_1/adder_14[4].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_135
+N7/add_29_1/adder_14[5].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_134
+N7/add_29_1/adder_14[6].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_133
+N7/add_29_1/adder_14[7].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_132
+N7/add_29_1/adder_14[8].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_131
+N7/add_29_1/adder_14[9].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_130
+N7/add_29_1/adder_2[0].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_114
+N7/add_29_1/adder_2[1].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_113
+N7/add_29_1/adder_4[0].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_118
+N7/add_29_1/adder_4[1].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_117
+N7/add_29_1/adder_4[2].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_116
+N7/add_29_1/adder_4[3].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_115
+N7/add_29_1/adder_7[0].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_125
+N7/add_29_1/adder_7[1].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_124
+N7/add_29_1/adder_7[2].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_123
+N7/add_29_1/adder_7[3].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_122
+N7/add_29_1/adder_7[4].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_121
+N7/add_29_1/adder_7[5].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_120
+N7/add_29_1/adder_7[6].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_119
+N7/mult_56_28/multiplier_28[0].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_83
+N7/mult_56_28/multiplier_28[10].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_73
+N7/mult_56_28/multiplier_28[11].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_72
+N7/mult_56_28/multiplier_28[12].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_71
+N7/mult_56_28/multiplier_28[13].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_70
+N7/mult_56_28/multiplier_28[14].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_69
+N7/mult_56_28/multiplier_28[15].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_68
+N7/mult_56_28/multiplier_28[16].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_67
+N7/mult_56_28/multiplier_28[17].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_66
+N7/mult_56_28/multiplier_28[18].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_65
+N7/mult_56_28/multiplier_28[19].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_64
+N7/mult_56_28/multiplier_28[1].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_82
+N7/mult_56_28/multiplier_28[20].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_63
+N7/mult_56_28/multiplier_28[21].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_62
+N7/mult_56_28/multiplier_28[22].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_61
+N7/mult_56_28/multiplier_28[23].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_60
+N7/mult_56_28/multiplier_28[24].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_59
+N7/mult_56_28/multiplier_28[25].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_58
+N7/mult_56_28/multiplier_28[26].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_57
+N7/mult_56_28/multiplier_28[27].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_56
+N7/mult_56_28/multiplier_28[2].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_81
+N7/mult_56_28/multiplier_28[3].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_80
+N7/mult_56_28/multiplier_28[4].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_79
+N7/mult_56_28/multiplier_28[5].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_78
+N7/mult_56_28/multiplier_28[6].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_77
+N7/mult_56_28/multiplier_28[7].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_76
+N7/mult_56_28/multiplier_28[8].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_75
+N7/mult_56_28/multiplier_28[9].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_74
+N8/add_28_1/Add_1/add_46              127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_84
+N8/add_28_1/adder_14[0].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_111
+N8/add_28_1/adder_14[10].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_101
+N8/add_28_1/adder_14[11].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_100
+N8/add_28_1/adder_14[12].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_99
+N8/add_28_1/adder_14[13].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_98
+N8/add_28_1/adder_14[1].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_110
+N8/add_28_1/adder_14[2].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_109
+N8/add_28_1/adder_14[3].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_108
+N8/add_28_1/adder_14[4].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_107
+N8/add_28_1/adder_14[5].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_106
+N8/add_28_1/adder_14[6].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_105
+N8/add_28_1/adder_14[7].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_104
+N8/add_28_1/adder_14[8].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_103
+N8/add_28_1/adder_14[9].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_102
+N8/add_28_1/adder_2[0].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_86
+N8/add_28_1/adder_2[1].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_85
+N8/add_28_1/adder_4[0].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_90
+N8/add_28_1/adder_4[1].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_89
+N8/add_28_1/adder_4[2].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_88
+N8/add_28_1/adder_7[0].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_97
+N8/add_28_1/adder_7[1].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_96
+N8/add_28_1/adder_7[2].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_95
+N8/add_28_1/adder_7[3].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_94
+N8/add_28_1/adder_7[4].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_93
+N8/add_28_1/adder_7[5].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_92
+N8/add_28_1/adder_7[6].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_91
+N8/add_29_1/Add_1/add_46              127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_56
+N8/add_29_1/adder_14[0].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_83
+N8/add_29_1/adder_14[10].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_73
+N8/add_29_1/adder_14[11].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_72
+N8/add_29_1/adder_14[12].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_71
+N8/add_29_1/adder_14[13].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_70
+N8/add_29_1/adder_14[1].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_82
+N8/add_29_1/adder_14[2].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_81
+N8/add_29_1/adder_14[3].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_80
+N8/add_29_1/adder_14[4].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_79
+N8/add_29_1/adder_14[5].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_78
+N8/add_29_1/adder_14[6].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_77
+N8/add_29_1/adder_14[7].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_76
+N8/add_29_1/adder_14[8].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_75
+N8/add_29_1/adder_14[9].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_74
+N8/add_29_1/adder_2[0].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_58
+N8/add_29_1/adder_2[1].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_57
+N8/add_29_1/adder_4[0].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_62
+N8/add_29_1/adder_4[1].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_61
+N8/add_29_1/adder_4[2].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_60
+N8/add_29_1/adder_4[3].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_59
+N8/add_29_1/adder_7[0].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_69
+N8/add_29_1/adder_7[1].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_68
+N8/add_29_1/adder_7[2].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_67
+N8/add_29_1/adder_7[3].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_66
+N8/add_29_1/adder_7[4].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_65
+N8/add_29_1/adder_7[5].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_64
+N8/add_29_1/adder_7[6].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_63
+N8/mult_56_28/multiplier_28[0].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_55
+N8/mult_56_28/multiplier_28[10].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_45
+N8/mult_56_28/multiplier_28[11].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_44
+N8/mult_56_28/multiplier_28[12].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_43
+N8/mult_56_28/multiplier_28[13].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_42
+N8/mult_56_28/multiplier_28[14].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_41
+N8/mult_56_28/multiplier_28[15].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_40
+N8/mult_56_28/multiplier_28[16].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_39
+N8/mult_56_28/multiplier_28[17].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_38
+N8/mult_56_28/multiplier_28[18].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_37
+N8/mult_56_28/multiplier_28[19].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_36
+N8/mult_56_28/multiplier_28[1].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_54
+N8/mult_56_28/multiplier_28[20].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_35
+N8/mult_56_28/multiplier_28[21].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_34
+N8/mult_56_28/multiplier_28[22].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_33
+N8/mult_56_28/multiplier_28[23].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_32
+N8/mult_56_28/multiplier_28[24].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_31
+N8/mult_56_28/multiplier_28[25].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_30
+N8/mult_56_28/multiplier_28[26].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_29
+N8/mult_56_28/multiplier_28[27].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_28
+N8/mult_56_28/multiplier_28[2].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_53
+N8/mult_56_28/multiplier_28[3].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_52
+N8/mult_56_28/multiplier_28[4].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_51
+N8/mult_56_28/multiplier_28[5].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_50
+N8/mult_56_28/multiplier_28[6].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_49
+N8/mult_56_28/multiplier_28[7].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_48
+N8/mult_56_28/multiplier_28[8].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_47
+N8/mult_56_28/multiplier_28[9].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_46
+N9/add_28_1/Add_1/add_46              127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_28
+N9/add_28_1/adder_14[0].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_55
+N9/add_28_1/adder_14[10].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_45
+N9/add_28_1/adder_14[11].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_44
+N9/add_28_1/adder_14[12].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_43
+N9/add_28_1/adder_14[13].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_42
+N9/add_28_1/adder_14[1].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_54
+N9/add_28_1/adder_14[2].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_53
+N9/add_28_1/adder_14[3].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_52
+N9/add_28_1/adder_14[4].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_51
+N9/add_28_1/adder_14[5].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_50
+N9/add_28_1/adder_14[6].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_49
+N9/add_28_1/adder_14[7].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_48
+N9/add_28_1/adder_14[8].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_47
+N9/add_28_1/adder_14[9].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_46
+N9/add_28_1/adder_2[0].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_30
+N9/add_28_1/adder_2[1].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_29
+N9/add_28_1/adder_4[0].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_34
+N9/add_28_1/adder_4[1].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_33
+N9/add_28_1/adder_4[2].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_32
+N9/add_28_1/adder_7[0].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_41
+N9/add_28_1/adder_7[1].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_40
+N9/add_28_1/adder_7[2].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_39
+N9/add_28_1/adder_7[3].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_38
+N9/add_28_1/adder_7[4].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_37
+N9/add_28_1/adder_7[5].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_36
+N9/add_28_1/adder_7[6].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_35
+N9/add_29_1/Add_1/add_46              127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_0
+N9/add_29_1/adder_14[0].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_27
+N9/add_29_1/adder_14[10].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_17
+N9/add_29_1/adder_14[11].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_16
+N9/add_29_1/adder_14[12].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_15
+N9/add_29_1/adder_14[13].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_14
+N9/add_29_1/adder_14[1].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_26
+N9/add_29_1/adder_14[2].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_25
+N9/add_29_1/adder_14[3].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_24
+N9/add_29_1/adder_14[4].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_23
+N9/add_29_1/adder_14[5].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_22
+N9/add_29_1/adder_14[6].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_21
+N9/add_29_1/adder_14[7].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_20
+N9/add_29_1/adder_14[8].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_19
+N9/add_29_1/adder_14[9].Add_14/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_18
+N9/add_29_1/adder_2[0].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_2
+N9/add_29_1/adder_2[1].Add_2/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_1
+N9/add_29_1/adder_4[0].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_6
+N9/add_29_1/adder_4[1].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_5
+N9/add_29_1/adder_4[2].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_4
+N9/add_29_1/adder_4[3].Add_4/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_3
+N9/add_29_1/adder_7[0].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_13
+N9/add_29_1/adder_7[1].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_12
+N9/add_29_1/adder_7[2].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_11
+N9/add_29_1/adder_7[3].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_10
+N9/add_29_1/adder_7[4].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_9
+N9/add_29_1/adder_7[5].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_8
+N9/add_29_1/adder_7[6].Add_7/add_46
+                                      127.0720      0.0     127.0720       0.0000  0.0000  Image_Classifier_DW01_add_7
+N9/mult_56_28/multiplier_28[0].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_27
+N9/mult_56_28/multiplier_28[10].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_17
+N9/mult_56_28/multiplier_28[11].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_16
+N9/mult_56_28/multiplier_28[12].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_15
+N9/mult_56_28/multiplier_28[13].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_14
+N9/mult_56_28/multiplier_28[14].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_13
+N9/mult_56_28/multiplier_28[15].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_12
+N9/mult_56_28/multiplier_28[16].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_11
+N9/mult_56_28/multiplier_28[17].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_10
+N9/mult_56_28/multiplier_28[18].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_9
+N9/mult_56_28/multiplier_28[19].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_8
+N9/mult_56_28/multiplier_28[1].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_26
+N9/mult_56_28/multiplier_28[20].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_7
+N9/mult_56_28/multiplier_28[21].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_6
+N9/mult_56_28/multiplier_28[22].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_5
+N9/mult_56_28/multiplier_28[23].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_4
+N9/mult_56_28/multiplier_28[24].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_3
+N9/mult_56_28/multiplier_28[25].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_2
+N9/mult_56_28/multiplier_28[26].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_1
+N9/mult_56_28/multiplier_28[27].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_0
+N9/mult_56_28/multiplier_28[2].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_25
+N9/mult_56_28/multiplier_28[3].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_24
+N9/mult_56_28/multiplier_28[4].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_23
+N9/mult_56_28/multiplier_28[5].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_22
+N9/mult_56_28/multiplier_28[6].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_21
+N9/mult_56_28/multiplier_28[7].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_20
+N9/mult_56_28/multiplier_28[8].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_19
+N9/mult_56_28/multiplier_28[9].Mult/mult_50
+                                     1720.8090      0.1    1720.8090       0.0000  0.0000  Image_Classifier_DW_mult_tc_18
+--------------------------------  ------------  -------  -----------  -----------  ------  -------------------------------
+Total                                                    862894.3582  581742.2346  0.0000
+
+1

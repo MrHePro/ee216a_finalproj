@@ -1,0 +1,5 @@
+# Lab 2 Setup
+# --------------
+source /w/apps3/Synopsys/Design_Complier/vG-2012.06-SP1/SETUP
+source /w/apps3/Synopsys/PrimeTime/vG-2012.06-SP1/SETUP
+source /usr/apps/mentor/modelsim-6.2b/SETUP
