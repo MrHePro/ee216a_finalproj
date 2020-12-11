@@ -31,7 +31,7 @@ Large Data: success rate: (10000-1420)/10000 = 85.8%
 
 -----------------------------------------------------------------------------
 Result:
-Area: 2881170.484110 um^2
+Area: 2,881,170.484110 um^2
 Power: 3.73e+06 uW
 
 
@@ -50,7 +50,12 @@ Large Data: success rate: (10000-1419)/10000 = 85.8%
 
 
 
-7. 
+7. Synthesis success:
+	Verilog_syn_v3_final
+	Final_Turnin
+
+	Area: 2,380,370.123667 um^2
+	Power: 3,010,000 uW
 	
 
 
